@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai'
 import { BsPerson } from 'react-icons/bs'
 import { GrProjects } from 'react-icons/gr'
-
+import { TiThMenu } from "react-icons/ti";
 
 const SideNav = () => {
 
@@ -14,7 +14,11 @@ const SideNav = () => {
 
   return (
     <div>
-      <AiOutlineMenu size={30} onClick={handleNav} className='absolute top-4 right-4 z-[99] md:hidden'/>
+      <AiOutlineMenu 
+        size={30} 
+        // color={!nav ? 'white' : 'black'} 
+        onClick={handleNav} 
+        className='absolute top-4 right-4 z-[99] md:hidden'/>
       {
         nav ? (
           <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
