@@ -32,6 +32,7 @@ const Main = () => {
             />
           </h2>
           <div className='flex justify-between pt-6 max-w-[125px] w-full'>
+            {/* Add some links here */}
             <FaLinkedin className='cursor-pointer' size={20}/>
             <FaGithub className='cursor-pointer' size={20}/>
             <FaSoundcloud className='cursor-pointer' size={20}/>
