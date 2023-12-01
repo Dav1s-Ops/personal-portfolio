@@ -4,6 +4,7 @@ import Main from './components/Main'
 import Work from './components/Work'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import AboutMe from './components/AboutMe'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Main />
       <Work />
       <Projects />
+      <AboutMe />
       <Contact />
     </main>
   )
