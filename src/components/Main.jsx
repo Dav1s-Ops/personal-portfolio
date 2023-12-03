@@ -1,15 +1,20 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { FaLinkedin, FaSoundcloud, FaGithub } from 'react-icons/fa'
+import Greydient from '../assets/ffflux-gray-green.svg'
+import Spiral from '../assets/oooscillate-green.svg'
 
 const Main = () => {
   return (
     <div id='main'>
-      <img className='w-full h-screen object-cover scale-x-[-1]' src="https://images.unsplash.com/photo-1540198163009-7afda7da2945?q=80&w=1827&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-      <div className='w-full h-screen absolute top-0 left-0 bg-white/50'>
+      <div className="relative w-full h-screen">
+        <img className="absolute inset-0 w-full h-full object-cover scale-x-[-1]" src={Greydient} />
+        <img className="absolute inset-0 w-full h-full object-cover scale-x-[-1]" src={Spiral} alt="Description of Spiral Image" />
+      </div>
+      <div className='w-full h-screen absolute top-0 left-0 bg-white/20'>
         <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
-          <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>Davis Weimer</h1>
-          <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>
+          <h1 className='font-mussels-bold sm:text-7xl text-4xl text-dark_gray'>DAVIS WEIMER</h1>
+          <h2 className='flex font-mussels sm:text-4xl text-2xl pt-4 text-dark_gray'>
             
             <TypeAnimation
               sequence={[
@@ -23,6 +28,8 @@ const Main = () => {
               'DJ',
               3000,
               'Producer',
+              3000,
+              'Sound Designer',
               3000
               ]}
               wrapper="div"
@@ -31,11 +38,17 @@ const Main = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className='flex justify-between pt-6 max-w-[125px] w-full'>
+          <div className='flex justify-between pt-6 max-w-[160px] w-full'>
             {/* Add some links here */}
-            <FaLinkedin className='cursor-pointer' size={20}/>
-            <FaGithub className='cursor-pointer' size={20}/>
-            <FaSoundcloud className='cursor-pointer' size={20}/>
+            <a href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
+            </a>
+            <a href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
+              <FaGithub className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
+            </a>
+            <a href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
+              <FaSoundcloud className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
+            </a>
           </div>
         </div>
       </div>

@@ -3,12 +3,12 @@ import React from 'react'
 const AboutMe = () => {
   return (
     <div id='about-me' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
-      <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>
+      <h1 className='py-4 text-4xl font-mussels-bold text-center text-dark_gray'>
         About Me
       </h1>
-      <div className='text-center text-lg'>
+      <div className='font-mussels text-center text-lg'>
         <p className='mb-4'>
-          Hi, I'm Davis! Nice to me you.
+          Hi, I'm Davis! Nice to meet you.
         </p>
         <p className='mb-4'>
           
