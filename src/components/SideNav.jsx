@@ -45,20 +45,20 @@ const SideNav = () => {
         ) : (
           <div className='md:block hidden fixed top-[25%] z-10'>
             <div className='flex flex-col'>
-              <a href='#main' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-                <AiOutlineHome size={25} />
+              <a href='#main' className='rounded-full shadow bg-dark_gray shadow-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                <AiOutlineHome style={{color: '#A4F236'}} size={25} />
               </a>
-              <a href='#work' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-                <GrProjects size={25} />
+              <a href='#work' className='rounded-full shadow bg-dark_gray shadow-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                <GrProjects style={{color: '#A4F236'}} size={25} />
               </a>
-              <a href='#projects' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-                <AiOutlineProject size={25} />
+              <a href='#projects' className='rounded-full shadow bg-dark_gray shadow-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                <AiOutlineProject style={{color: '#A4F236'}} size={25} />
               </a>
-              <a href='#about-me' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-                <BsPerson size={25} />
+              <a href='#about-me' className='rounded-full shadow bg-dark_gray shadow-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                <BsPerson style={{color: '#A4F236'}} size={25} />
               </a>
-              <a href='#contact' className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-                <AiOutlineMail size={25} />
+              <a href='#contact' className='rounded-full shadow bg-dark_gray shadow-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                <AiOutlineMail style={{color: '#A4F236'}} size={25} />
               </a>
             </div>
           </div>

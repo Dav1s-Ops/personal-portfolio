@@ -14,7 +14,7 @@ const Main = () => {
       <div className='w-full h-screen absolute top-0 left-0 bg-white/20'>
         <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
           <h1 className='font-mussels-bold sm:text-7xl text-4xl text-dark_gray'>DAVIS WEIMER</h1>
-          <h2 className='flex font-mussels sm:text-4xl text-2xl pt-4 text-dark_gray'>
+          <h2 className='flex font-mussels sm:text-4xl text-2xl pt-4 text-white'>
             
             <TypeAnimation
               sequence={[
@@ -39,13 +39,13 @@ const Main = () => {
             />
           </h2>
           <div className='flex justify-between pt-8 max-w-[160px] w-full'>
-            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 ' href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 hover:bg-alien_green' href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 ' href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 hover:bg-alien_green' href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
               <FaGithub className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 ' href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 hover:bg-alien_green' href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
               <FaSoundcloud className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
             </a>
           </div>

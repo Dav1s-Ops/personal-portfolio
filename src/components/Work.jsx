@@ -3,28 +3,43 @@ import WorkItem from './WorkItem'
 
 const data = [
   {
-    year: 2020,
-    title: 'Audio Engineer',
-    duration: '3 years',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    year: 2023,
+    title: 'Software Engineer',
+    company: 'Coming soon...',
+    duration: 'Current',
+    details: 'Beginning my journey into Fullstack Software Engineering after completing the Backend Engineering program at Turing School of Software & Design.'
+  },
+  {
+    year: 2022,
+    title: 'Integration Technician',
+    company: 'Brown Note Productions',
+    website: 'https://brownnote.com/integration/services/',
+    duration: '1 year',
+    details: 'Joined the Integration Department are Brown Note Productions.'
+  },
+  {
+    year: 2021,
+    title: 'Studio Engineer',
+    company: 'Evergroove Studio',
+    website: 'https://www.evergroove.com/',
+    duration: '2 years',
+    details: 'Worked with Brad Smalling at his Recording Studio in Evergreen, CO. Helped upgraded the studio to a complete Audio over IP (AoIP) Dante Atmos system.'
   },
   {
     year: 2020,
-    title: 'Audio Engineer',
-    duration: '3 years',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    company: 'Itchy-O',
+    website: 'https://itchyo.com/',
+    title: 'FOH Engineer',
+    duration: '2 years',
+    details: "Worked with Itchy-O during the pandemic to put on 'Drive-in' Sypherlot performances around Denver as well as record, mix and master the Sypherlot shows." 
   },
   {
-    year: 2020,
-    title: 'Audio Engineer',
-    duration: '3 years',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  },
-  {
-    year: 2020,
-    title: 'Audio Engineer',
-    duration: '3 years',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    year: 2018,
+    company: 'Brown Note Productions',
+    website: 'https://brownnote.com/',
+    title: 'A2 - Audio Technician',
+    duration: '2 years',
+    details: "Specialized in Audio and worked local/national festivals and shows including X Games, Global Dance and Chicago Open Air." 
   }
 ]
 
@@ -37,6 +52,8 @@ const Work = () => {
           key={i}
           year={work.year}
           title={work.title}
+          company={work.company}
+          website={work.website}
           duration={work.duration}
           details={work.details}
         />
