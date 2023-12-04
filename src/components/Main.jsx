@@ -38,18 +38,18 @@ const Main = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className='flex justify-between pt-6 max-w-[160px] w-full'>
-            {/* Add some links here */}
-            <a href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
+          <div className='flex justify-between pt-8 max-w-[160px] w-full'>
+            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 ' href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
             </a>
-            <a href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 ' href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
               <FaGithub className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
             </a>
-            <a href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 ease-in duration-200 hover:opacity-75 ' href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
               <FaSoundcloud className='cursor-pointer' style={{ color: '#303030' }} size={30}/>
             </a>
           </div>
+
         </div>
       </div>
     </div>
