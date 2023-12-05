@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WorkItem = ({ year, title, duration, details, company, website }) => {
+const WorkItem = ({ year, title, duration, details, company, website, list }) => {
   return (
     <ol className='font-mussels ml-5 mr-5 flex flex-col md:flex-row relative border-l  border-stone-200'>
       <li className='mb-10 ml-4'>
@@ -12,15 +12,19 @@ const WorkItem = ({ year, title, duration, details, company, website }) => {
           </p>
           <div className='mt-4 text-s md:text-sm text-md font-semibold text-dark_gray'>
             <a 
-              className='mt-4 cursor-pointer hover:scale-105 ease-in duration-200 
-                        hover:bg-dark_gray hover:text-alien_green hover:px-2 hover:py-2 
-                        hover:rounded-md' 
-              href={website}>
+              className='mt-4 cursor-pointer hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:px-2 hover:py-2 hover:rounded-md' 
+              href={website} target="_blank" rel="noopener noreferrer">
               {company}
             </a>
           </div>
           <p className='my-2 text-base font-normal text-stone-500'>
             {details}
+          {/* <ul>
+            {console.log(list)}
+            {list.map((l) => (
+              <li>{l}</li>
+            ))}
+          </ul> */}
           </p>
       </li>
     </ol>
