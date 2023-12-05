@@ -2,6 +2,7 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { FaLinkedin, FaSoundcloud, FaGithub } from 'react-icons/fa'
 import { FaMixcloud } from "react-icons/fa6";
+import { SiDiscogs } from "react-icons/si";
 import Greydient from '../assets/ffflux-gray-green.svg'
 import Spiral from '../assets/oooscillate-green.svg'
 import DwLogo from '../assets/Davis-Weimer-gray-cropped.svg'
@@ -53,6 +54,9 @@ const Main = () => {
             </a>
             <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.mixcloud.com/da-5k/" target="_blank" rel="noopener noreferrer">
               <FaMixcloud className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
+            </a>
+            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.discogs.com/user/BerrikDub" target="_blank" rel="noopener noreferrer">
+              <SiDiscogs className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
           </div>
 
