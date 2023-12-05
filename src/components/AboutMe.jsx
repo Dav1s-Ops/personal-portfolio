@@ -1,4 +1,5 @@
 import React from 'react'
+import MeImg from '../assets/fiverr-pic.jpg'
 
 const AboutMe = () => {
   return (
@@ -6,20 +7,22 @@ const AboutMe = () => {
       <h1 className='py-4 text-4xl font-mussels-bold text-center text-dark_gray'>
         About Me
       </h1>
-      <div className='font-mussels text-center text-lg'>
+      <div className='font-mussels text-center'>
         <p className='mb-4'>
-          Hi, I'm Davis! Nice to meet you.
+          Howdy! I'm pleased you made it this far. 
         </p>
         <p className='mb-4'>
-          
-          I'll add some skills here soon.
+        My name is Davis and I'm a Software Engineer with a background in Audio Engineering. When I am not programming (or sometimes when I am) I love listening to, collecting and making music.
         </p>
         <p>
-          And even more here too!
+        Consider reaching out with the Contact Form below, I'd love to connect! 
         </p>
+      </div>
+      <div className='flex justify-center'>
+      <img className='mt-6 w-48 h-48 object-cover rounded-full shadow-xl' src={MeImg} />
       </div>
     </div>
   );
 };
 
-export default AboutMe
+export default AboutMe;

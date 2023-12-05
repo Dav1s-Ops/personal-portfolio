@@ -45,8 +45,8 @@ const SideNav = () => {
         ) : (
           <div className='md:block hidden fixed top-[25%] z-10 '>
             <div className='flex flex-col'>
-              <a href='#main' className='rounded-full shadow bg-dark_gray shadow-gray-500 hover:bg-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200 '>
-                <AiOutlineHome style={{color: '#A4F236'}} size={25} />
+              <a href='#main'  className='rounded-full shadow bg-dark_gray shadow-gray-500 hover:bg-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200 '>
+                <AiOutlineHome alt='Home' style={{color: '#A4F236'}} size={25} />
               </a>
               <a href='#work' className='rounded-full shadow bg-dark_gray shadow-gray-500 hover:bg-gray-500 m-5 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
                 <GrProjects style={{color: '#A4F236'}} size={25} />

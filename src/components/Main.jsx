@@ -42,16 +42,16 @@ const Main = () => {
           </h2>
 
           <div className='flex justify-between pt-6 max-w-[160px] w-full'>
-            <a className='hover:translate-y-1 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
               <FaGithub className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
               <FaSoundcloud className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.mixcloud.com/da-5k/" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.mixcloud.com/da-5k/" target="_blank" rel="noopener noreferrer">
               <FaMixcloud className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
           </div>
