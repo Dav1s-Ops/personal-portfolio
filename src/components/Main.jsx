@@ -15,11 +15,11 @@ const Main = () => {
         <img className="absolute inset-0 w-full h-full object-cover scale-x-[-1]" src={Spiral} />
       </div>
       <div className='w-full h-screen absolute top-0 left-0 bg-white/10'>
-        <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
+        <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center md:items-start items-center'>
           
           <img className='w-10/12 md:w-full self-right mb-6' src={DwLogo} style={{ color: '#303030' }} />
 
-          <h2 className='flex justify-center font-mussels sm:text-4xl text-1xl ml-1 md:p-3 p-1  text-white rounded-full w-7/12 bg-dark_gray md:justify-start'>
+          <h2 className='flex justify-center font-mussels md:text-4xl text-1xl ml-1 md:p-4 p-1  text-white rounded-full w-7/12 bg-dark_gray md:justify-start'>
             <TypeAnimation
               sequence={[
                 'Software Engineer',
@@ -42,20 +42,20 @@ const Main = () => {
             />
           </h2>
 
-          <div className='flex justify-between pt-6 max-w-[160px] w-full'>
-            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
+          <div className='flex justify-center md:justify-between pt-6 max-w-[160px] w-full'>
+            <a className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.linkedin.com/in/davis-weimer" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://github.com/DavisWeimer" target="_blank" rel="noopener noreferrer">
               <FaGithub className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://soundcloud.com/berrik" target="_blank" rel="noopener noreferrer">
               <FaSoundcloud className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.mixcloud.com/da-5k/" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.mixcloud.com/da-5k/" target="_blank" rel="noopener noreferrer">
               <FaMixcloud className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
-            <a className='hover:translate-y-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.discogs.com/user/BerrikDub" target="_blank" rel="noopener noreferrer">
+            <a className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500' href="https://www.discogs.com/user/BerrikDub" target="_blank" rel="noopener noreferrer">
               <SiDiscogs className='cursor-pointer' style={{ color: '#A4F236' }} size={30}/>
             </a>
           </div>
