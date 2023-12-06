@@ -50,7 +50,7 @@ const data = [
 
 const Work = () => {
   return (
-    <div id='work' className='m-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+    <div id='work' className='max-w-[1440px] m-auto md:pl-20 p-4 py-16'>
       <h1 className='font-mussels-bold text-4xl mb-10 text-center text-dark_gray'>Work</h1>
       {data.map((work, i) => (
         <WorkItem 

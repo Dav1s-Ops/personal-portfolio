@@ -14,7 +14,7 @@ const WorkItem = ({ year, title, duration, details, company, website, list }) =>
             <a 
               className='mt-4 cursor-pointer hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:px-2 hover:py-2 hover:rounded-md' 
               href={website} target="_blank" rel="noopener noreferrer">
-              {company}
+              <u>{company}</u>
             </a>
           </div>
           <p className='my-2 text-base font-normal text-stone-500'>
