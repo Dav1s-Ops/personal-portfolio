@@ -3,6 +3,8 @@ import ProjectItem from './ProjectItem'
 import RefugeeAidImg from '../assets/RefugeeAid.png'
 import LabelLensImg from '../assets/LabelLens.png'
 import CodingImg from '../assets/coding.avif'
+import WhetherSweater from '../assets/whether-sweater.png'
+import GenreFi from '../assets/genre-fi.png'
 
 const Projects = () => {
   return (
@@ -13,29 +15,35 @@ const Projects = () => {
       </p>
       <div className='grid sm:grid-cols-2 gap-12'>
         <ProjectItem 
+          img={WhetherSweater}
+          title='Whether Sweater App'
+          framework='React + Vite / / Ruby on Rails'
+          belink={'https://github.com/DavisWeimer/whether_sweater_api'}
+          felink={'https://github.com/DavisWeimer/whether-sweater-fe'}
+          link={'https://whether-sweater-fe.vercel.app/'}
+          />
+        <ProjectItem 
           img={RefugeeAidImg}
           title='Refugee Aid'
-          framework='React JS'
-          link='https://refugee-aid-fe.vercel.app/'
+          framework='React.js / / Ruby on Rails'
+          belink={'https://github.com/Refugee-Aid-Capstone/refugee_aid_be'}
+          felink={'https://github.com/Refugee-Aid-Capstone/refugee-aid-fe'}
+          link={'https://refugee-aid-fe.vercel.app/'}
+        />
+        <ProjectItem 
+          img={GenreFi}
+          title='Genre-Fi'
+          framework='React.js'
+          link={'https://genre-fi.vercel.app/'}
         />
         <ProjectItem 
           img={LabelLensImg}
           title='Label Lens'
           framework='Ruby on Rails'
+          belink={'https://github.com/Label-Lens/label_lens_be'}
+          felink={'https://github.com/Label-Lens/label_lens_fe'}
           link={'https://label-lens.onrender.com/'}
           />
-        <ProjectItem 
-          img={CodingImg}
-          title='Sweater Whether API'
-          framework='Ruby on Rails'
-          link={'https://github.com/DavisWeimer/whether_sweater_api'}
-          />
-        <ProjectItem 
-          img={CodingImg}
-          title='Simple MB Compressor'
-          framework='C++'
-          link={'https://github.com/DavisWeimer/SimpleMBComp'}
-        />
       </div>
     </div>
   )

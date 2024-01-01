@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         light_gray: '#D8D8D8',
-        med_gray: '#191919',
+        med_gray: '#4B4B4B',
         dark_gray: '#303030',
         serious_orange: '#D40C0C',
         alien_green: '#A4F236',
