@@ -18,7 +18,7 @@ const AboutMe = () => {
       <div className='flex flex-col items-center'>
       <img className='mt-6 w-48 h-48 m-6 object-cover rounded-full shadow-xl' src={MeImg} />
       <a href="https://open.spotify.com/user/davis.weimer?si=60942ca615b740b6">
-        <img className='w-full bg-dark_gray rounded-lg' src="https://spotify-github-profile.vercel.app/api/view?uid=davis.weimer&cover_image=true&theme=novatorem&show_offline=true&background_color=303030&interchange=false&bar_color=a4f236" alt="spotify-github-profile" />
+        <img className='w-full bg-dark_gray rounded-lg' src="https://spotify-github-profile.vercel.app/api/view?uid=davis.weimer&cover_image=true&theme=novatorem&show_offline=false&background_color=303030&interchange=false&bar_color=a4f236" alt="spotify-github-profile" />
       </a>
       </div>
     </div>
