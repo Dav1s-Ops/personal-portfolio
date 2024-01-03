@@ -10,15 +10,15 @@ const ProjectItem = ({img, title, link, belink, felink, framework}) => {
         </h3>
         <p className='lg:pb-4 pt-2 text-white text-center'>{framework}</p>
         <a className='shadow-md' href={link} target="_blank" rel="noopener noreferrer">
-          <p className='text-center p-0.5 lg:p-2 rounded-lg mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 ease-in-out duration-300 hover:outline hover:outline-offset-1 hover:outline-alien_green hover:bg-med_gray lg:hover:py-2 hover:rounded-md' >Website</p>
+          <p className='text-center p-0.5 lg:p-2 rounded-lg mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 ease-in duration-300 hover:outline hover:outline-offset-1 hover:outline-alien_green hover:bg-med_gray lg:hover:py-2 hover:rounded-md' >Website</p>
         </a>
         {belink &&
           <a href={belink} target="_blank" rel="noopener noreferrer">
-          <p className='text-center p-0.5 lg:p-2 rounded-lg mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 ease-in-out duration-300 hover:outline hover:outline-offset-1 hover:outline-alien_green hover:bg-med_gray lg:hover:py-2 hover:rounded-md' >BE Repo</p>
+          <p className='text-center p-0.5 lg:p-2 rounded-lg mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 ease-in duration-300 hover:outline hover:outline-offset-1 hover:outline-alien_green hover:bg-med_gray lg:hover:py-2 hover:rounded-md' >BE Repo</p>
         </a>}
         {felink &&
           <a href={felink} target="_blank" rel="noopener noreferrer">
-          <p className='text-center p-0.5 lg:p-2 rounded-lg mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 ease-in-out duration-300 hover:outline hover:outline-offset-1 hover:outline-alien_green hover:bg-med_gray lg:hover:py-2 hover:rounded-md' >FE Repo</p>
+          <p className='text-center p-0.5 lg:p-2 rounded-lg mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 ease-in duration-300 hover:outline hover:outline-offset-1 hover:outline-alien_green hover:bg-med_gray lg:hover:py-2 hover:rounded-md' >FE Repo</p>
         </a>}
       </div>
     </div>
