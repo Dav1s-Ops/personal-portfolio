@@ -17,7 +17,7 @@ const SideNav = () => {
       <AiOutlineMenu 
         size={30} 
         onClick={handleNav} 
-        className='fixed top-4 right-4 z-[99] md:hidden'/>
+        className='fixed top-4 right-4 z-[99] xl:hidden'/>
       {
         nav ? (
           <div className='font-mussels fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>

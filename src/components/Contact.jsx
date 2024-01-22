@@ -7,7 +7,7 @@ const Contact = () => {
       <h1 className='py-4 text-4xl font-mussels-bold text-center text-dark_gray'>
         Contact
       </h1>
-      <form action='https://getform.io/f/b09652ff-93d0-4cd8-a2cf-5e877e03adc9' method='POST' encType='multipart/form-data' className='font-mussels'>
+      <form action='https://getform.io/f/b09652ff-93d0-4cd8-a2cf-5e877e03adc9' method='POST' encType='multipart/form-data' className='font-mussels md:ml-5'>
         <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
         <input type="hidden" name="_gotcha" style={{ display: 'none' }} />
           <div className='flex flex-col'>
@@ -25,7 +25,7 @@ const Contact = () => {
           </div>
           <div className='flex flex-col py-2'>
             <label className='uppercase text-sm py-2'>Subject</label>
-            <input className='border-2 rounded-lg p-3 flex border-gray-300' type='text' name='subject' required minlength="5" />
+            <input className='border-2 rounded-lg p-3 flex border-gray-300' type='text' name='subject' required minLength="5" />
           </div>
           <div className='flex flex-col py-2'>
             <label className='uppercase text-sm py-2'>Message</label>
