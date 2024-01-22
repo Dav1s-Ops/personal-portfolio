@@ -2,7 +2,6 @@ import React from 'react'
 import ProjectItem from './ProjectItem'
 import RefugeeAidImg from '../assets/RefugeeAid.png'
 import LabelLensImg from '../assets/LabelLens.png'
-import CodingImg from '../assets/coding.avif'
 import WhetherSweater from '../assets/whether-sweater.png'
 import GenreFi from '../assets/genre-fi.png'
 
@@ -35,6 +34,7 @@ const Projects = () => {
           title='Genre-Fi'
           framework='React.js'
           link={'https://genre-fi.vercel.app/'}
+          felink={'https://github.com/DavisWeimer/genre-fi'}
         />
         <ProjectItem 
           img={LabelLensImg}
