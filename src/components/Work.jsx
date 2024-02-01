@@ -3,7 +3,7 @@ import WorkItem from './WorkItem'
 
 const data = [
   {
-    year: 2023,
+    year: '2023 - Present',
     title: 'Software Engineer',
     company: 'Coming soon...',
     duration: 'Current',
@@ -50,8 +50,8 @@ const data = [
 
 const Work = () => {
   return (
-    <div id='work' className='max-w-[1440px] m-auto md:pl-20 p-4 py-16'>
-      <h1 className='font-mussels-bold text-4xl mb-10 text-center text-dark_gray'>Work</h1>
+    <div id='work' className='max-w-[1440px] m-auto xl:pl-20 p-4 py-16'>
+      <h1 className='font-mussels-bold text-4xl mb-10 text-center text-dark_gray'>Work // Skills</h1>
       {data.map((work, i) => (
         <WorkItem 
           key={i}
@@ -63,6 +63,26 @@ const Work = () => {
           details={work.details}
         />
       ))}
+      <div className='flex flex-col gap-4 m-auto lg:flex-row justify-evenly text-lg lg:text-xl'>
+        <div className='flex flex-col items-center justify-evenly p-4 text-white bg-dark_gray rounded-l-3xl rounded outline outline-alien_green outline-3 shadow-xl shadow-gray-400'>
+          <div className='flex items-center justify-start gap-2'>
+          <h4 className='font-mussels'>Languages</h4>
+            <img src="https://skillicons.dev/icons?i=ruby,js,cpp" alt="My languages"/>
+          </div>
+        </div>
+        <div className='flex flex-col items-center justify-evenly p-4 text-white bg-dark_gray rounded-tl-3xl rounded-br-3xl lg:rounded outline outline-alien_green outline-3 shadow-xl shadow-gray-400'>
+          <div className='flex items-center justify-start gap-2'>
+            <h4 className='font-mussels'>Technologies</h4>
+            <img src="https://skillicons.dev/icons?i=rails,react,postgres,graphql,nodejs,bootstrap,vite,tailwind&perline=4" alt="My frameworks"/>
+          </div>
+        </div>
+        <div className='flex flex-col items-center justify-evenly p-4 text-white bg-dark_gray rounded-r-3xl rounded outline outline-alien_green outline-3 shadow-xl shadow-gray-400'>
+        <div className='flex items-center justify-start gap-2'>
+            <h4 className='font-mussels'>Dev Tools</h4>
+            <img src="https://skillicons.dev/icons?i=vscode,postman,git" alt="My development tools"/>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

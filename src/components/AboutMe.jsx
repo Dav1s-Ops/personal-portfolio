@@ -4,13 +4,13 @@ import Book from '../assets/babylon.webp'
 
 const AboutMe = () => {
   return (
-    <div id='about-me' className='max-w-[780px] m-auto md:pl-20 p-4 py-16'>
+    <div id='about-me' className='max-w-[780px] m-auto xl:pl-20 p-4 py-16'>
       <h1 className='py-4 text-4xl font-mussels-bold text-center text-dark_gray'>
         About Me
       </h1>
       <div className='font-mussels text-center'>
         <p className='mb-4'>
-        My name is Davis and I'm a Software Engineer with a background in Audio Engineering. When I am not programming (or sometimes when I am) I love listening to, collecting and making music. Check out my <a className='hover:underline hover:text-alien_green' href='https://soundcloud.com/berrik' target="_blank" rel="noopener noreferrer">SoundCloud</a> to see what I've been working on. I also enjoy reading (especially sci-fi space operas), playing video games, <a className='hover:underline hover:text-alien_green' href='https://www.mixcloud.com/da-5k/' target="_blank" rel="noopener noreferrer">DJing</a>, and spending time with my partner Mary and our cat.
+        My name is Davis and I'm a Software Engineer with a background in Audio Engineering. When I am not programming I love listening to, collecting and making music. Check out my <a className='hover:underline hover:text-alien_green' href='https://soundcloud.com/berrik' target="_blank" rel="noopener noreferrer">SoundCloud</a> to see what I've been working on. I also enjoy reading (especially sci-fi space operas), playing video games, <a className='hover:underline hover:text-alien_green' href='https://www.mixcloud.com/da-5k/' target="_blank" rel="noopener noreferrer">DJing</a>, and spending time with my partner Mary and our cat.
         </p>
       </div>
         <div className='flex flex-col items-center'>

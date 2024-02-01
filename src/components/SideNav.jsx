@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai'
-import { IoArrowUpOutline } from "react-icons/io5";
+import { AiOutlineClose, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai'
+import { MdMenuOpen } from "react-icons/md";
 import { BsPerson } from 'react-icons/bs'
 import { GrProjects } from 'react-icons/gr'
-import { TiThMenu } from "react-icons/ti";
 
 const SideNav = () => {
   const [nav, setNav] = useState(false);
@@ -14,12 +13,27 @@ const SideNav = () => {
 
   return (
     <div>
-      <AiOutlineMenu 
-        size={30} 
-        onClick={handleNav} 
-        className='fixed top-4 right-4 z-[99] xl:hidden'/>
       {
         nav ? (
+          <AiOutlineClose 
+            size={30} 
+            onClick={handleNav}
+            style={{ color: '#303030', transition: 'transform 0.2s ease-in-out' }} 
+            className='nav-icon fixed top-4 right-4 z-[99] xl:hidden rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-200 hover:rotate-90' 
+            
+          />
+        ) : (
+          <MdMenuOpen 
+            size={35} 
+            onClick={handleNav}
+            style={{ color: '#303030' }} 
+            className='nav-icon fixed top-4 right-4 z-[99] xl:hidden rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-200' 
+          />
+        )
+      }
+      {
+        nav ? (
+          
           <div className='font-mussels fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
             <a onClick={handleNav}href='#main' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-dark_gray text-alien_green shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'>
               <AiOutlineHome size={20} />
@@ -43,7 +57,7 @@ const SideNav = () => {
             </a>
           </div>
         ) : (
-          <div className='md:block hidden fixed top-[25%] z-10 '>
+          <div className='xl:block hidden fixed top-[25%] z-10 '>
             <div className='flex flex-col'>
             <a href='#main' className='group relative flex items-center justify-center rounded-full bg-dark_gray hover:scale-110 m-5 p-4 cursor-pointer transition-all ease-in duration-300 w-14 h-14'>
               <div className='inline-flex justify-center items-center '>
