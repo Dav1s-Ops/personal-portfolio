@@ -19,12 +19,6 @@ const WorkItem = ({ year, title, duration, details, company, website, list }) =>
           </div>
           <p className='my-2 text-base font-normal text-stone-500'>
             {details}
-          {/* <ul>
-            {console.log(list)}
-            {list.map((l) => (
-              <li>{l}</li>
-            ))}
-          </ul> */}
           </p>
       </li>
     </ol>
