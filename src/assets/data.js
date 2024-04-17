@@ -6,7 +6,7 @@ export const data = [
     website: 'https://tackmobile.com/',
     duration: '3 months',
     inSchool: false,
-    details: 'Worked on the Accolader web-based employee recognition system. I implemented new planned features. In addition, improved the test coverage in the codebase to improve the code quality.',
+    details: 'Worked on the Accolader web-based employee recognition system. I implemented new planned features. In addition, I improved the test coverage in the codebase to improve the code quality.',
     list: ['Languages: HTML5, CSS3, Ruby, JavaScript, C++', 'Frameworks/Technology: Rails, React PostgreSQL, GraphQL, Node.js, Bootstrap, Vite, Tailwind', 'Development Tools: VSCode, Git, Postman']
   },
   {
