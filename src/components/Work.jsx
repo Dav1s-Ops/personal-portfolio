@@ -11,7 +11,7 @@ const Work = () => {
   return (
     <div id='work' className='max-w-[1440px] m-auto xl:pl-20 p-4 py-16'>
       <h1 className='font-mussels-bold text-4xl mb-10 text-center text-dark_gray'>Work // Skills</h1>
-      <VerticalTimeline className='font-mussels-bold' lineColor="#A4F236">
+      <VerticalTimeline className='font-mussels' lineColor="#A4F236">
         {data.map((work, i) => (
           <VerticalTimelineElement
             key={i}
@@ -19,18 +19,19 @@ const Work = () => {
             contentStyle={{ background: '#303030', padding: '20px', borderRadius: '24px', border: '3px solid #A4F236', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.03)' }}
             contentArrowStyle={{ borderRight: '13px solid #A4F236' }}
             lineColor={"#A4F236"}
-            date={<span className="lg:text-dark_gray text-alien_green">{work.year}</span>}
+            date={<span className="text-xl lg:text-dark_gray text-alien_green">{work.year}</span>}
 
             iconStyle={{ background: '#303030', color: '#A4F236' }}
             icon={work.inSchool ? <IoMdSchool/> : <FaBriefcase />}
           >
-            <h3 className="font-mussels text-lg font-semibold text-white">{work.title}</h3>
+            <h3 className="text-lg font-semibold text-white">{work.title}</h3>
+            <h5 className='my-1 text-sm font-normal leading-none text-stone-400'>{work.duration}</h5>
             <a 
-              className='font-mussels mt-4 cursor-pointer text-light_gray hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:rounded-md' 
+              className='mt-4 cursor-pointer text-light_gray hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:rounded-md' 
               href={work.website} target="_blank" rel="noopener noreferrer">
               <u>{work.company}</u>
             </a>
-            <p className="font-mussels text-stone-400">{work.details}</p>
+            <p className="text-stone-400">{work.details}</p>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
