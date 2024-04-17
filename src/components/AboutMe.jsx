@@ -1,6 +1,6 @@
 import React from 'react'
 import MeImg from '../assets/fiverr-pic.jpg'
-import Book from '../assets/babylon.webp'
+import Book from '../assets/tiamats-wrath.png'
 
 const AboutMe = () => {
   return (
