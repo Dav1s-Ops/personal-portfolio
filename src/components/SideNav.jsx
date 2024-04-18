@@ -24,10 +24,10 @@ const SideNav = () => {
           />
         ) : (
           <MdMenuOpen 
-            size={35} 
+            size={30} 
             onClick={handleNav}
-            style={{ color: '#303030' }} 
-            className='nav-icon fixed top-4 right-4 z-[99] xl:hidden rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-200' 
+            style={{ color: '#A4F236' }} 
+            className='bg-dark_gray p-1 outline outline-alien_green outline-2 nav-icon fixed top-4 right-4 z-[99] xl:hidden rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-200' 
           />
         )
       }
