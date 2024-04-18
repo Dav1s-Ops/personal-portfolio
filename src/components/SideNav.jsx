@@ -19,15 +19,15 @@ const SideNav = () => {
             size={30} 
             onClick={handleNav}
             style={{ color: '#303030', transition: 'transform 0.2s ease-in-out' }} 
-            className='nav-icon fixed top-4 right-4 z-[99] xl:hidden rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-200 hover:rotate-90' 
+            className='nav-icon fixed top-2 right-2 z-[99] xl:hidden rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-200 hover:rotate-90' 
             
           />
         ) : (
           <MdMenuOpen 
-            size={30} 
+            size={35} 
             onClick={handleNav}
             style={{ color: '#A4F236' }} 
-            className='bg-dark_gray p-1 outline outline-alien_green outline-2 nav-icon fixed top-4 right-4 z-[99] xl:hidden rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-200' 
+            className='bg-dark_gray p-1 border border-alien_green nav-icon fixed top-2 right-2 z-[99] xl:hidden rounded-md cursor-pointer hover:scale-105 ease-in-out duration-200' 
           />
         )
       }
