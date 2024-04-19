@@ -62,9 +62,9 @@ export const data = [
   {
     year: 2016,
     company: 'University Of Colorado Denver',
-    website: 'https://brownnote.com/',
+    website: 'https://www.ucdenver.edu/',
     title: 'Audio Engineer',
-    duration: '2 years',
+    duration: '4 years',
     inSchool: true,
     details: "Completed my BA of Science in Recording Arts.",
     list: ['Repaired speakers: Enhanced sound quality by resolving audio issues in speakers.', 'Built comprehensive Audio Packages: Increased client satisfaction through tailored Audio Packages.', 'Loaded / unloaded trucks: Improved setup times and productivity in equipment logistics.', 'Flew Line-array systems: Optimized audience audio experience with PA system positioning.'] 

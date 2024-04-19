@@ -25,13 +25,16 @@ const Work = () => {
             icon={work.inSchool ? <IoMdSchool/> : <FaBriefcase />}
             iconClassName='bg-dark_gray shadow-lg shadow-gray-400 outline outline-alien_green outline-4'
           >
-            <h3 className="text-lg font-semibold text-white">{work.title}</h3>
-            <h5 className='my-1 text-sm font-normal leading-none text-stone-400'>{work.duration}</h5>
+            <h3 className="text-xl font-bold text-white">{work.title}</h3>
             <a 
-              className='mt-4 cursor-pointer text-light_gray hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:rounded-md' 
-              href={work.website} target="_blank" rel="noopener noreferrer">
-              <u>{work.company}</u>
+              className='mt-4 cursor-pointer text-alien_green hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-light_gray hover:rounded-md' 
+              href={work.website} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}> {/* Add inline style to remove underline */}
+              {work.company}
             </a>
+            <h5 className='my-1 text-sm font-normal leading-none text-light_gray'>{work.duration}</h5>
             <p className="text-stone-400">{work.details}</p>
           </VerticalTimelineElement>
         ))}
