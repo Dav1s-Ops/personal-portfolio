@@ -1,7 +1,7 @@
 export const data = [
   {
     year: 2024,
-    title: 'Software Engineer Intern',
+    title: 'Software Engineer',
     company: 'Tack Mobile',
     website: 'https://tackmobile.com/',
     duration: '3 months',
