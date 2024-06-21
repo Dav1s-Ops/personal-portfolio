@@ -19,7 +19,7 @@ const AboutMe = () => {
       <div className='flex lg:flex-row flex-col gap-2 items-center justify-center'>
         <div className='bg-dark_gray rounded-lg p-4 shadow-xl shadow-gray-400' style={{ width: '320px', height: '445px' }}>
           <a href="https://open.spotify.com/user/davis.weimer?si=60942ca615b740b6" target="_blank" rel="noopener noreferrer">
-            <img className='object-cover w-full h-full' src="https://spotify-github-profile.vercel.app/api/view?uid=davis.weimer&cover_image=true&theme=default&show_offline=false&background_color=303030&interchange=false&bar_color=a4f236" alt="spotify-github-profile" />
+            <img className='object-cover w-full h-full' src="https://spotify-github-profile.kittinanx.com/api/view?uid=davis.weimer&cover_image=true&theme=default&show_offline=false&background_color=303030&interchange=false&bar_color=a4f236" alt="spotify-github-profile" />
           </a>
         </div>
         <div className='bg-dark_gray rounded-lg p-4 shadow-xl shadow-gray-400' style={{ width: '320px', height: '445px' }}>
