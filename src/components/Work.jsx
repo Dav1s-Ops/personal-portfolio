@@ -48,8 +48,11 @@ const Work = () => {
         </div>
         <div className='flex flex-col items-center justify-evenly p-4 text-white bg-dark_gray rounded-tl-3xl rounded-br-3xl lg:rounded outline outline-alien_green outline-4 shadow-lg shadow-gray-400'>
           <div className='flex items-center justify-start gap-2'>
-            <h4 className='font-mussels'>Technologies</h4>
-            <img src="https://skillicons.dev/icons?i=rails,react,postgres,graphql,nodejs,bootstrap,vite,tailwind&perline=4" alt="My frameworks"/>
+            <h4 className='font-mussels sm:text-xl'>
+              <span className='hidden sm:inline'>Technologies</span>
+              <span className='sm:hidden'>Tech</span>
+            </h4>
+            <img src="https://skillicons.dev/icons?i=rails,react,postgres,graphql,nodejs,bootstrap,vite,tailwind,docker,aws&perline=5" alt="My frameworks"/>
           </div>
         </div>
         <div className='flex flex-col items-center justify-evenly p-4 text-white bg-dark_gray rounded-r-3xl rounded outline outline-alien_green outline-4 shadow-lg shadow-gray-400'>
