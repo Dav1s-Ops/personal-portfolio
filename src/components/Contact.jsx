@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({ soundEnabled, playSound, blipHoverSound, blipClickSound }) => {
 
   return (
     <div id='contact' className='max-w-[1040px] m-auto xl
@@ -32,7 +32,11 @@ const Contact = () => {
             <label className='uppercase text-sm py-2'>Message</label>
             <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10' name='message' required ></textarea>
           </div>
-          <button className='bg-dark_gray text-gray-100 mt-4 w-full p-4 rounded-lg hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:px-4 hover:py-4 hover:rounded-md'>
+          <button 
+            className='bg-dark_gray text-gray-100 mt-4 w-full p-4 rounded-lg hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:px-4 hover:py-4 hover:rounded-md'
+            onMouseEnter={() => soundEnabled && playSound(blipHoverSound)}
+            onClick={() => soundEnabled && playSound(blipClickSound)}
+          >
             Send Message
           </button>
       </form>

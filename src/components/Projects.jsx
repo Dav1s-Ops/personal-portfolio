@@ -5,7 +5,7 @@ import LabelLensImg from '../assets/LabelLens.png'
 import WhetherSweater from '../assets/whether-sweater.png'
 import GenreFi from '../assets/genre-fi.png'
 
-const Projects = () => {
+const Projects = ({ soundEnabled, playSound, blipHoverSound, blipClickSound }) => {
   return (
     <div id='projects' className='max-w-[1040px] m-auto xl:pl-20 p-4 py-16'>
       <h1 className='text-4xl font-mussels-bold text-center text-dark_gray'>Projects</h1>
@@ -20,6 +20,10 @@ const Projects = () => {
           belink={'https://github.com/DavisWeimer/whether_sweater_api'}
           felink={'https://github.com/DavisWeimer/whether-sweater-fe'}
           link={'https://whether-sweater-fe.vercel.app/'}
+          soundEnabled={soundEnabled} 
+          playSound={playSound} 
+          blipHoverSound={blipHoverSound} 
+          blipClickSound={blipClickSound}
           />
         <ProjectItem 
           img={GenreFi}
@@ -27,6 +31,10 @@ const Projects = () => {
           framework='React'
           link={'https://genre-fi.vercel.app/'}
           felink={'https://github.com/DavisWeimer/genre-fi'}
+          soundEnabled={soundEnabled} 
+          playSound={playSound} 
+          blipHoverSound={blipHoverSound} 
+          blipClickSound={blipClickSound}
         />
         <ProjectItem 
           img={RefugeeAidImg}
@@ -34,6 +42,10 @@ const Projects = () => {
           framework='React / / Ruby on Rails'
           belink={'https://github.com/Refugee-Aid-Capstone/refugee_aid_be'}
           felink={'https://github.com/Refugee-Aid-Capstone/refugee-aid-fe'}
+          soundEnabled={soundEnabled} 
+          playSound={playSound} 
+          blipHoverSound={blipHoverSound} 
+          blipClickSound={blipClickSound}
         />
         <ProjectItem 
           img={LabelLensImg}
@@ -41,6 +53,10 @@ const Projects = () => {
           framework='Ruby on Rails'
           belink={'https://github.com/Label-Lens/label_lens_be'}
           felink={'https://github.com/Label-Lens/label_lens_fe'}
+          soundEnabled={soundEnabled} 
+          playSound={playSound} 
+          blipHoverSound={blipHoverSound} 
+          blipClickSound={blipClickSound}
           />
       </div>
     </div>

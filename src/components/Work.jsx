@@ -1,7 +1,5 @@
 import React from 'react'
-import WorkItem from './WorkItem'
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-// import { MdWork } from "react-icons/md";
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { IoMdSchool } from "react-icons/io";
 import { FaBriefcase } from "react-icons/fa";
 import 'react-vertical-timeline-component/style.min.css';
@@ -20,7 +18,6 @@ const Work = () => {
             contentArrowStyle={{ borderRight: '13px solid #A4F236' }}
             lineColor={"#A4F236"}
             date={<span className="text-xl lg:text-dark_gray text-alien_green">{work.year}</span>}
-
             iconStyle={{ background: '#303030', color: '#A4F236' }}
             icon={work.inSchool ? <IoMdSchool/> : <FaBriefcase />}
             iconClassName='bg-dark_gray shadow-lg shadow-gray-400 outline outline-alien_green outline-4'
@@ -47,7 +44,7 @@ const Work = () => {
       <div className='flex flex-col gap-4 m-auto lg:flex-row justify-evenly text-lg lg:text-xl'>
         <div className='flex flex-col items-center justify-evenly p-4 text-white bg-dark_gray rounded-l-3xl rounded outline outline-alien_green outline-4 shadow-lg shadow-gray-400'>
           <div className='flex items-center justify-start gap-2'>
-          <h4 className='font-mussels'>Languages</h4>
+            <h4 className='font-mussels'>Languages</h4>
             <img src="https://skillicons.dev/icons?i=ruby,js,cpp" alt="My languages"/>
           </div>
         </div>
@@ -61,7 +58,7 @@ const Work = () => {
           </div>
         </div>
         <div className='flex flex-col items-center justify-evenly p-4 text-white bg-dark_gray rounded-r-3xl rounded outline outline-alien_green outline-4 shadow-lg shadow-gray-400'>
-        <div className='flex items-center justify-start gap-2'>
+          <div className='flex items-center justify-start gap-2'>
             <h4 className='font-mussels'>Dev Tools</h4>
             <img src="https://skillicons.dev/icons?i=vscode,postman,git" alt="My development tools"/>
           </div>
