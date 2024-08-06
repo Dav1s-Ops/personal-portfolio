@@ -31,11 +31,16 @@ const Work = () => {
               href={work.website} 
               target="_blank" 
               rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}> {/* Add inline style to remove underline */}
+              style={{ textDecoration: 'none' }}>
               {work.company}
             </a>
             <h5 className='my-1 text-sm font-normal leading-none text-light_gray'>{work.duration}</h5>
             <p className="text-stone-400">{work.details}</p>
+            {work.list && (
+              <div className='flex justify-start items-center'>
+                <img className='mt-4 w-40' src={work.list} alt='languages/tech' />
+              </div>
+            )}
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
