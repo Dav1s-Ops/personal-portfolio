@@ -24,8 +24,6 @@ const Main = () => {
               sequence={[
                 'Software Engineer',
                 3000,
-                'Software Developer',
-                3000,
                 'Audio Engineer',
                 3000,
                 'DJ',
