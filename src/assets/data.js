@@ -6,7 +6,7 @@ export const data = [
     website: 'https://thxrex.com/',
     duration: 'Current',
     inSchool: false,
-    details: 'Worked on the Accolader web-based employee recognition system. I implemented new planned features. In addition, I improved the test coverage in the codebase to improve the code quality.',
+    details: 'I am currently working on the development and testing of the ThxRex B2B2C food web application. More to come soon!',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,tailwind,heroku,docker'
   },
   {
@@ -16,7 +16,7 @@ export const data = [
     website: 'https://tackmobile.com/',
     duration: '4 months',
     inSchool: false,
-    details: 'Worked on the Accolader web-based employee recognition system. I implemented new planned features. In addition, I improved the test coverage in the codebase to improve the code quality.',
+    details: 'Worked on the Accolader web-based employee recognition system. I implemented new planned feature for Users to add birthdays. In addition, I worked on containerizing the app with Docker to migrate from AWS EB and use AWS ECR to deploy on and EC2 instance.',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,redis,aws,docker'
   },
   {
