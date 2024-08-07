@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { TiTick } from "react-icons/ti";
-import { TiTimes } from "react-icons/ti";
+import { TiTick, TiTimes } from "react-icons/ti";
 import SideNav from './components/SideNav';
 import Main from './components/Main';
 import Work from './components/Work';
@@ -33,7 +32,10 @@ function App() {
   const navHoverSound = useRef(new Audio(NavHoverSound));
   const timelineSound = useRef(new Audio(TimelineSound));
   const [soundEnabled, setSoundEnabled] = useState(null); // null means user has not made a choice yet
+  const [shake, setShake] = useState(false);
 
+  const constraintsRef = useRef(null);
+  
   // Set volume for each sound
   hoverSound.current.volume = 0.2;
   clickSound.current.volume = 0.2;
@@ -64,33 +66,49 @@ function App() {
     setSoundEnabled(choice);
   };
 
+  const shakeAnimation = {
+    y: -280,
+    x: [0, -10, 10, -10, 10, -10, 10, 0],
+    opacity: 1,
+    transition: { duration: 0.5 }
+  };
+
+  const handleOutsideClick = (e) => {
+    if (e.target.closest('.dialog-container') === null) {
+      setShake(true);
+      setTimeout(() => setShake(false), 500); // Reset shake state after the animation
+    }
+  };
+
   return (
     <main>
       <AnimatePresence>
         {soundEnabled === null && (
-          <motion.div 
-            className="fixed w-full h-screen flex flex-col justify-center items-center z-20"
-            initial={{ y: -400, opacity: 0 }}
-            animate={{ y: -270, opacity: 1 }}
-            exit={{ y: -400, opacity: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="bg-gradient-to-b from-alien_green shadow-lg shadow-gray-400 text-dark_gray border-solid border-alien_green border-2 p-6 w-80 h-16 rounded-full flex flex-row justify-center items-center gap-3 text-center">
-              <h2 className="font-mussels-bold text-md">Enable sound? 🔊</h2>
-              <button 
-                className="text-xl font-mussels w-12 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 ease-in duration-200" 
-                onClick={() => handleUserChoice(true)}
+          <div className="fixed w-full h-screen flex flex-col justify-center items-center z-20" onClick={handleOutsideClick}>
+            <div ref={constraintsRef} className="w-full h-full flex justify-center items-center">
+              <motion.div
+                className="dialog-container bg-gradient-to-b to-dark_gray/40 from-alien_green shadow-lg text-dark_gray border-solid border-alien_green border-2 p-6 w-80 h-16 rounded-full flex flex-row justify-center items-center gap-3 text-center"
+                initial={{ y: -400, opacity: 0 }}
+                animate={shake ? { y: -270, x: 0, ...shakeAnimation } : { y: -270, opacity: 1 }}
+                exit={{ y: -400, opacity: 0 }}
+                transition={{ duration: 0.75 }}
               >
-                <TiTick />
-              </button>
-              <button 
-                className="text-xl font-mussels w-12 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 ease-in duration-200" 
-                onClick={() => handleUserChoice(false)}
-              >
-                <TiTimes />
-              </button>
+                <h2 className="font-mussels-bold text-md">Enable sound? 🔊</h2>
+                <button 
+                  className="text-xl font-mussels w-12 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 ease-in duration-200" 
+                  onClick={() => handleUserChoice(true)}
+                >
+                  <TiTick />
+                </button>
+                <button 
+                  className="text-xl font-mussels w-12 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 ease-in duration-200" 
+                  onClick={() => handleUserChoice(false)}
+                >
+                  <TiTimes />
+                </button>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
       <SideNav 
@@ -127,7 +145,7 @@ function App() {
         blipClickSound={blipClickSound.current}
       />
     </main>
-  )
+  );
 }
 
 export default App;
