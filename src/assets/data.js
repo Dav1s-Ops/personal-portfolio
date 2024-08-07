@@ -16,7 +16,7 @@ export const data = [
     website: 'https://tackmobile.com/',
     duration: '4 months',
     inSchool: false,
-    details: 'Worked on the Accolader web-based employee recognition system. I implemented a new planned feature for Users to add Birthdays. In addition, I worked on containerizing the app with Docker to migrate from AWS EB and use AWS ECR to deploy on and EC2 instance.',
+    details: 'Worked on the Accolader web-based employee recognition system. I implemented a new planned feature for Users to add Birthdays. In addition, I worked on containerizing the app with Docker to migrate from AWS EB and use AWS ECR to deploy on an EC2 instance.',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,redis,aws,docker'
   },
   {
