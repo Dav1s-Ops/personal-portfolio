@@ -1,6 +1,6 @@
 import React from 'react'
 import MeImg from '../assets/fiverr-pic.jpg'
-import Book from '../assets/tiamats-wrath.png'
+import Book from '../assets/mistborn.webp'
 
 const AboutMe = () => {
   return (
@@ -23,7 +23,7 @@ const AboutMe = () => {
         <div className='bg-dark_gray rounded-lg p-4 shadow-xl shadow-gray-400' style={{ width: '320px', height: '445px' }}>
           <h2 className='text-xl font-mussels-bold text-center text-white mb-2'>Currently Reading</h2>
           <div style={{ height: 'calc(100% - 2.2rem)' }}>
-            <img className='object-cover w-full h-full' src={Book} alt="Current Book" />
+            <img className='object-fit w-full h-full' src={Book} alt="Current Book" />
           </div>
         </div>
       </div>
