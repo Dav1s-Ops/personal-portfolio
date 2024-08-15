@@ -27,7 +27,7 @@ export const data = [
     duration: '9 months',
     inSchool: true,
     details: 'Began my journey into Software Engineering after completing the Backend Engineering program at Turing School of Software & Design.',
-    list: 'https://skillicons.dev/icons?i=ruby,rails,js,react,git,github'
+    list: 'https://skillicons.dev/icons?i=ruby,rails,js,react,graphql,git'
   },
   {
     year: 2022,
