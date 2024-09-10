@@ -22,6 +22,12 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
               sequence={[
                 'Software Engineer',
                 3000,
+                'UI/UX Designer',
+                3000,
+                'DevOps Engineer',
+                3000,
+                'Graphic Designer',
+                3000,
                 'Audio Engineer',
                 3000,
                 'DJ',
