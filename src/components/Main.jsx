@@ -56,7 +56,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
             </a>
             <a
               className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500'
-              href="https://github.com/DavisWeimer"
+              href="https://github.com/Dav1s-Ops"
               target="_blank"
               rel="noopener noreferrer"
               onMouseEnter={() => soundEnabled && playSound(hoverSound)}

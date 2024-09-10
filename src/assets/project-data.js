@@ -8,8 +8,8 @@ const projectList = [
     img: WhetherSweater,
     title: 'Whether Sweater App',
     framework: 'React + Vite / / Ruby on Rails',
-    belink: 'https://github.com/DavisWeimer/whether_sweater_api',
-    felink: 'https://github.com/DavisWeimer/whether-sweater-fe',
+    belink: 'https://github.com/Dav1s-Ops/whether_sweater_api',
+    felink: 'https://github.com/Dav1s-Ops/whether-sweater-fe',
     link: 'https://whether-sweater-fe.vercel.app/',
   },
   {
@@ -17,7 +17,7 @@ const projectList = [
     title: 'Genre-Fi',
     framework: 'React',
     link: 'https://genre-fi.vercel.app/',
-    felink: 'https://github.com/DavisWeimer/genre-fi',
+    felink: 'https://github.com/Dav1s-Ops/genre-fi',
   },
   {
     img: RefugeeAidImg,
