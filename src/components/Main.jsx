@@ -16,7 +16,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
       </div>
       <div className='w-full h-screen absolute top-0 left-0 bg-white/10'>
         <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center md:items-start items-center'>
-          <img className='w-10/12 translate-x-4 mb-2 md:translate-y-6 md:w-full self-right' src={DwLogo} style={{ color: '#303030' }} />
+          <img className='w-10/12 translate-x-4 mb-2 md:translate-y-4 md:w-full self-right' src={DwLogo} style={{ color: '#303030' }} />
           <h2 className='flex justify-center font-mussels md:text-4xl text-1xl ml-1 md:p-4 p-1  text-white rounded-full w-7/12 bg-dark_gray md:justify-start'>
             <TypeAnimation
               sequence={[
