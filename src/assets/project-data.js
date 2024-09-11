@@ -8,7 +8,7 @@ const projectList = [
   {
     img: WhetherSweater,
     title: 'Whether Sweater App',
-    framework: 'React / / Ruby on Rails',
+    framework: 'React // Ruby on Rails',
     belink: 'https://github.com/Dav1s-Ops/whether_sweater_api',
     felink: 'https://github.com/Dav1s-Ops/whether-sweater-fe',
     link: 'https://whether-sweater-fe.vercel.app/',
@@ -23,7 +23,7 @@ const projectList = [
   {
     img: AccoladerImg,
     title: 'Accolader.io',
-    framework: 'Ruby on Rails / / AWS // Docker',
+    framework: 'Ruby on Rails // AWS // Docker',
     link: 'https://accolader.io/'
   },
   {
