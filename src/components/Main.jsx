@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { TypeAnimation } from 'react-type-animation'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { FaLinkedin, FaSoundcloud, FaGithub } from 'react-icons/fa'
 import { FaMixcloud } from "react-icons/fa6";
 import { SiDiscogs } from "react-icons/si";
@@ -8,11 +9,24 @@ import Spiral from '../assets/oooscillate-green.svg'
 import DwLogo from '../assets/drw-logo-circle-x-cropped.svg'
 
 const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
+  const { scrollY } = useScroll();
+  
+  const greydientY = useTransform(scrollY, [0, 1000], [0, 200]);
+  const spiralY = useTransform(scrollY, [0, 1000], [0, 400]);
+
   return (
     <div id='main'>
-      <div className="relative w-full h-screen">
-        <img className="absolute inset-0 w-full h-full object-cover scale-x-[-1]" src={Greydient} />
-        <img className="absolute inset-0 w-full h-full object-cover scale-x-[-1]" src={Spiral} />
+      <div className="relative w-full h-screen overflow-hidden">
+        <motion.img 
+          className="absolute inset-0 w-full h-full object-cover" 
+          src={Greydient} 
+          style={{ y: greydientY }}
+        />
+        <motion.img 
+          className="absolute inset-0 w-full h-full object-cover" 
+          src={Spiral} 
+          style={{ y: spiralY }}
+        />
       </div>
       <div className='w-full h-screen absolute top-0 left-0 bg-white/10'>
         <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center md:items-start items-center'>
