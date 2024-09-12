@@ -94,15 +94,15 @@ function App() {
                 transition={{ duration: 0.75 }}
               >
                 <h2 className="font-mussels-bold text-md">Enable sound? 🔊</h2>
-                <div className='flex items-center justify-center gap-2'>
+                <div className='flex items-center justify-center gap-1'>
                   <button 
-                    className="text-xl font-mussels w-10 h-8 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 ease-in duration-200" 
+                    className="text-xl font-mussels w-10 h-8 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 hover:bg-med_gray ease-in duration-150" 
                     onClick={() => handleUserChoice(true)}
                   >
                     <TiTick />
                   </button>
                   <button 
-                    className="text-xl font-mussels w-10 h-8 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 ease-in duration-200" 
+                    className="text-xl font-mussels w-10 h-8 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 hover:bg-med_gray ease-in duration-150" 
                     onClick={() => handleUserChoice(false)}
                   >
                     <TiTimes />
