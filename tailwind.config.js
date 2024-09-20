@@ -16,8 +16,8 @@ export default {
       },
       fontFamily: {
         'compacta': ['AC Compacta', 'sans-serif'],
-        'mussels': ['TT Mussels', 'sans-serif'],
-        'mussels-bold': ['TT Mussels Xtra Bold', 'sans-serif'],
+        // 'mussels': ['TT Mussels', 'sans-serif'],
+        // 'mussels-bold': ['TT Mussels Xtra Bold', 'sans-serif'],
       },
     },
   },
