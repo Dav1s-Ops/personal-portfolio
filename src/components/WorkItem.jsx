@@ -1,28 +1,61 @@
-import React from 'react'
+import React from 'react';
+import { VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { IoMdSchool } from 'react-icons/io';
+import { FaBriefcase } from 'react-icons/fa';
 
-const WorkItem = ({ year, title, duration, details, company, website, list }) => {
+const WorkItem = ({
+  year,
+  title,
+  duration,
+  details,
+  company,
+  website,
+  list,
+  inSchool,
+}) => {
   return (
-    <ol className='font-mussels ml-5 mr-5 flex flex-col md:flex-row relative border-l  border-stone-200'>
-      <li className='mb-10 ml-4'>
-        <div className='absolute w-3 h-3 bg-stone-200 rounded-full  -left-1.5 border-white' />
-          <p className='flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm'>
-            <span className='inline-block px-2 py-1 font-semibold text-alien_green bg-dark_gray rounded-md'>{year}</span>
-            <span className='text-lg font-semibold text-dark_gray'>{title}</span>
-            <span className='my-1 text-sm font-normal leading-none text-stone-400'>{duration}</span>
-          </p>
-          <div className='mt-4 text-s md:text-sm text-md font-semibold text-dark_gray'>
-            <a 
-              className='mt-4 cursor-pointer hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:px-2 hover:py-2 hover:rounded-md' 
-              href={website} target="_blank" rel="noopener noreferrer">
-              <u>{company}</u>
-            </a>
-          </div>
-          <p className='my-2 text-base font-normal text-stone-500'>
-            {details}
-          </p>
-      </li>
-    </ol>
-  )
-}
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      contentStyle={{
+        background: '#303030',
+        padding: '20px',
+        borderRadius: '24px',
+        border: '3px solid #A4F236',
+        boxShadow:
+          '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+      }}
+      contentArrowStyle={{ borderRight: '13px solid #A4F236' }}
+      lineColor={'#A4F236'}
+      date={
+        <span className="text-xl lg:text-dark_gray text-alien_green">
+          {year}
+        </span>
+      }
+      iconStyle={{ background: '#303030', color: '#A4F236' }}
+      icon={inSchool ? <IoMdSchool /> : <FaBriefcase />}
+      iconClassName="bg-dark_gray shadow-lg shadow-gray-400 outline outline-alien_green outline-4"
+    >
+      <h3 className="text-xl font-bold text-white">{title}</h3>
+      <a
+        className="mt-4 cursor-pointer text-alien_green hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-light_gray hover:rounded-md"
+        href={website}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: 'none' }}
+      >
+        {company}
+      </a>
+      <h5 className="my-1 text-sm font-normal leading-none text-light_gray">
+        {duration}
+      </h5>
+      <p className="text-stone-400">{details}</p>
+      {list && (
+        <div className="flex justify-start items-center">
+          <img className="mt-4 w-40" src={list} alt="languages/tech" />
+        </div>
+      )}
+    </VerticalTimelineElement>
+  );
+};
 
-export default WorkItem
+export default WorkItem;

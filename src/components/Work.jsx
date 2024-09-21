@@ -1,44 +1,27 @@
-import React from 'react'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { IoMdSchool } from "react-icons/io";
-import { FaBriefcase } from "react-icons/fa";
+import React from 'react';
+import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { data } from '../assets/data.js'
+import { data } from '../assets/data.js';
+import WorkItem from './WorkItem'; // Adjust the import path if necessary
+
 
 const Work = () => {
   return (
     <div id='work' className='max-w-[1440px] m-auto xl:pl-20 p-4 py-16'>
       <h1 className='font-mussels-bold text-4xl mb-10 text-center text-dark_gray'>Work // Skills</h1>
-      <VerticalTimeline className='font-mussels' lineColor="#A4F236">
+      <VerticalTimeline className="font-mussels" lineColor="#A4F236">
         {data.map((work, i) => (
-          <VerticalTimelineElement
+          <WorkItem
             key={i}
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: '#303030', padding: '20px', borderRadius: '24px', border: '3px solid #A4F236', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.03)' }}
-            contentArrowStyle={{ borderRight: '13px solid #A4F236' }}
-            lineColor={"#A4F236"}
-            date={<span className="text-xl lg:text-dark_gray text-alien_green">{work.year}</span>}
-            iconStyle={{ background: '#303030', color: '#A4F236' }}
-            icon={work.inSchool ? <IoMdSchool/> : <FaBriefcase />}
-            iconClassName='bg-dark_gray shadow-lg shadow-gray-400 outline outline-alien_green outline-4'
-          >
-            <h3 className="text-xl font-bold text-white">{work.title}</h3>
-            <a 
-              className='mt-4 cursor-pointer text-alien_green hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-light_gray hover:rounded-md' 
-              href={work.website} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}>
-              {work.company}
-            </a>
-            <h5 className='my-1 text-sm font-normal leading-none text-light_gray'>{work.duration}</h5>
-            <p className="text-stone-400">{work.details}</p>
-            {work.list && (
-              <div className='flex justify-start items-center'>
-                <img className='mt-4 w-40' src={work.list} alt='languages/tech' />
-              </div>
-            )}
-          </VerticalTimelineElement>
+            year={work.year}
+            title={work.title}
+            duration={work.duration}
+            details={work.details}
+            company={work.company}
+            website={work.website}
+            list={work.list}
+            inSchool={work.inSchool}
+          />
         ))}
       </VerticalTimeline>
       <div className='flex flex-col gap-4 m-auto lg:flex-row justify-evenly text-lg lg:text-xl'>
