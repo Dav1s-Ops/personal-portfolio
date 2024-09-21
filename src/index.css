@@ -11,18 +11,17 @@
 
 @font-face {
   font-family: 'TT Mussels';
-  src: url('./assets/fonts/roboto.light.ttf') format('truetype');
+  src: url('./assets/fonts/TT Mussels Trial Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Mussels Xtra Bold';
-  src: url('./assets/fonts/roboto.bold.ttf') format('truetype');
+  src: url('./assets/fonts/TT Mussels Stencil Trial ExtraBold Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   scroll-behavior: smooth;
 }
