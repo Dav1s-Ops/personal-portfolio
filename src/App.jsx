@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import use3DCardEffect from './hooks/use3DCardEffect';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TiTick, TiTimes } from "react-icons/ti";
 import SideNav from './components/SideNav';
@@ -93,7 +94,7 @@ function App() {
                 exit={{ y: -400, opacity: 0 }}
                 transition={{ duration: 0.75 }}
               >
-                <h2 className="font-mussels-bold text-md">Enable sound? 🔊</h2>
+                <h2 className="font-mussels-bold text-lg">Enable sound? 🔊</h2>
                 <div className='flex items-center justify-center gap-1'>
                   <button 
                     className="text-xl font-mussels w-10 h-8 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 hover:bg-med_gray ease-in duration-150" 
