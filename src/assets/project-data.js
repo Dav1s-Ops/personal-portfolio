@@ -7,7 +7,7 @@ import GenreFi from '../assets/genre-fi.png';
 const projectList = [
   {
     img: WhetherSweater,
-    title: 'Whether Sweater App',
+    title: 'Whether Sweater',
     framework: 'React // Ruby on Rails',
     belink: 'https://github.com/Dav1s-Ops/whether_sweater_api',
     felink: 'https://github.com/Dav1s-Ops/whether-sweater-fe',
