@@ -11,17 +11,18 @@
 
 @font-face {
   font-family: 'TT Mussels';
-  src: url('./assets/fonts/TT Mussels Trial Light.ttf') format('truetype');
+  src: url('./assets/fonts/TT_Mussels_Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Mussels Xtra Bold';
-  src: url('./assets/fonts/TT Mussels Stencil Trial ExtraBold Italic.ttf') format('truetype');
+  src: url('./assets/fonts/TT_Mussels_Stencil_ExtraBold_Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   scroll-behavior: smooth;
 }
