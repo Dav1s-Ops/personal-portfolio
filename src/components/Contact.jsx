@@ -26,7 +26,7 @@ const Contact = ({ soundEnabled, playSound, blipHoverSound, blipClickSound }) =>
             <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10' name='message' required ></textarea>
           </div>
           <button 
-            className='bg-dark_gray text-gray-100 mt-4 w-full p-4 rounded-lg hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-alien_green hover:px-4 hover:py-4 hover:rounded-md'
+            className='bg-gradient-to-b to-dark_gray from-med_gray text-gray-100 mt-4 w-full p-4 rounded-lg hover:scale-105 ease-in duration-200  hover:text-alien_green hover:px-4 hover:py-4 hover:rounded-md'
             onMouseEnter={() => soundEnabled && playSound(blipHoverSound)}
             onClick={() => soundEnabled && playSound(blipClickSound)}
           >
