@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        light_gray: '#D8D8D8',
-        med_gray: '#4B4B4B',
+        light_gray: '#565656',
+        med_gray: '#3c3c3c',
         dark_gray: '#303030',
         serious_orange: '#D40C0C',
         alien_green: '#A4F236',
