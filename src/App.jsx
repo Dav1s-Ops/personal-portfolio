@@ -88,13 +88,13 @@ function App() {
           <div className="fixed w-full h-screen flex flex-col justify-center items-center z-20" onClick={handleOutsideClick}>
             <div ref={constraintsRef} className="w-full h-full flex justify-center items-center">
               <motion.div
-                className="dialog-container bg-gradient-to-b to-dark_gray/40 from-alien_green shadow-lg text-dark_gray border-solid border-alien_green border-2 p-6 w-68 h-14 rounded-full flex flex-row justify-around items-center gap-4 text-center"
+                className="dialog-container bg-gradient-to-b to-alien_green_dark from-alien_green shadow-md text-dark_gray hover:outline hover:outline-alien_green hover:outline-offset-2 hover:outline-2 p-6 w-68 h-14 rounded-full flex flex-row justify-around items-center gap-4 text-center"
                 initial={{ y: -400, opacity: 0 }}
                 animate={shake ? { y: -270, x: 0, ...shakeAnimation } : { y: -270, opacity: 1 }}
                 exit={{ y: -400, opacity: 0 }}
                 transition={{ duration: 0.75 }}
               >
-                <h2 className="font-mussels-bold text-lg">Enable sound? 🔊</h2>
+                <h2 className="font-mussels-bold text-lg">Enable sound?  🔊</h2>
                 <div className='flex items-center justify-center gap-1'>
                   <button 
                     className="text-xl font-mussels w-10 h-8 flex justify-center items-center rounded-lg shadow-lg bg-dark_gray text-alien_green p-2 cursor-pointer hover:scale-105 hover:bg-med_gray ease-in duration-150" 
