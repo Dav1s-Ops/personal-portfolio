@@ -12,6 +12,7 @@ export default {
         dark_gray: '#303030',
         serious_orange: '#D40C0C',
         alien_green: '#A4F236',
+        alien_green_dark: '#72a925',
         serious_purple: '#382A40'
       },
       fontFamily: {
