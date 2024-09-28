@@ -13,6 +13,7 @@ export default {
         serious_orange: '#D40C0C',
         alien_green: '#A4F236',
         alien_green_dark: '#72a925',
+        alien_green_light: '#bff572',
         serious_purple: '#382A40'
       },
       fontFamily: {
