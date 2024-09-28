@@ -31,7 +31,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
       <div className='w-full h-screen absolute top-0 left-0 bg-white/10'>
         <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center md:items-start items-center'>
           <img className='w-10/12 translate-x-4 mb-2 md:translate-y-4 md:w-full self-right' src={DwLogo} style={{ color: '#303030' }} />
-          <h2 className='flex justify-center font-mussels md:text-4xl text-1xl ml-1 md:p-4 p-1  text-white rounded-full w-7/12 bg-dark_gray md:justify-start'>
+          <h2 className='flex justify-center font-mussels md:text-4xl text-1xl ml-1 md:p-4 p-1  text-white rounded-full w-7/12 bg-[#161616]/80 backdrop-blur-md md:justify-start'>
             <TypeAnimation
               sequence={[
                 'Software Engineer',
@@ -59,7 +59,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
           </h2>
           <div className='flex justify-center md:justify-between pt-6 max-w-[160px] w-full'>
           <a
-              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500'
+              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-[#161616]/80 backdrop-blur-md hover:bg-gradient-to-b hover:to-light_gray hover:from-light_gray'
               href="https://www.linkedin.com/in/davis-weimer"
               target="_blank"
               rel="noopener noreferrer"
@@ -69,7 +69,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
               <FaLinkedin className='cursor-pointer' style={{ color: '#A4F236' }} size={30} />
             </a>
             <a
-              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500'
+              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-[#161616]/80 backdrop-blur-md hover:bg-gradient-to-b hover:to-light_gray hover:from-light_gray'
               href="https://github.com/Dav1s-Ops"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
               <FaGithub className='cursor-pointer' style={{ color: '#A4F236' }} size={30} />
             </a>
             <a
-              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500'
+              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-[#161616]/80 backdrop-blur-md hover:bg-gradient-to-b hover:to-light_gray hover:from-light_gray'
               href="https://soundcloud.com/berrik"
               target="_blank"
               rel="noopener noreferrer"
@@ -89,7 +89,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
               <FaSoundcloud className='cursor-pointer' style={{ color: '#A4F236' }} size={30} />
             </a>
             <a
-              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500'
+              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-[#161616]/80 backdrop-blur-md hover:bg-gradient-to-b hover:to-light_gray hover:from-light_gray'
               href="https://www.mixcloud.com/da-5k/"
               target="_blank"
               rel="noopener noreferrer"
@@ -99,7 +99,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
               <FaMixcloud className='cursor-pointer' style={{ color: '#A4F236' }} size={30} />
             </a>
             <a
-              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-dark_gray hover:bg-gray-500'
+              className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-[#161616]/80 backdrop-blur-md hover:bg-gradient-to-b hover:to-light_gray hover:from-light_gray'
               href="https://www.discogs.com/user/BerrikDub"
               target="_blank"
               rel="noopener noreferrer"
