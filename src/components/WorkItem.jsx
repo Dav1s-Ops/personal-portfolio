@@ -45,10 +45,10 @@ const WorkItem = ({
       >
         {company}
       </a>
-      <h5 className="my-1 text-sm font-normal leading-none text-light_gray">
+      <h5 className="my-1 text-sm font-normal leading-none text-stone-400">
         {duration}
       </h5>
-      <p className="text-stone-400">{details}</p>
+      <p className="text-stone-300">{details}</p>
       {list && (
         <div className="flex justify-start items-center">
           <img className="mt-4 w-40" src={list} alt="languages/tech" />
