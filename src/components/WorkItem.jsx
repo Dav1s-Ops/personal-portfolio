@@ -17,7 +17,7 @@ const WorkItem = ({
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{
-        background: '#303030',
+        background: 'linear-gradient(to bottom, #3c3c3c, #303030)',
         padding: '20px',
         borderRadius: '24px',
         border: '3px solid #A4F236',
