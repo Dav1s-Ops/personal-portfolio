@@ -44,7 +44,7 @@ const ProjectItem = ({
             onClick={() => soundEnabled && playSound(blipClickSound)}
             onMouseEnter={() => soundEnabled && playSound(blipHoverSound)}
           >
-            <p className="text-center p-0.5 lg:p-2 rounded-xl mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 duration-300 hover:bg-med_gray lg:hover:py-2">
+            <p className="text-center p-0.5 lg:p-2 rounded-xl mt-1 bg-gradient-to-b to-dark_gray from-med_gray text-alien_green text-md hover:scale-105 duration-300 hover:bg-med_gray lg:hover:py-2">
               Website
             </p>
           </a>
@@ -57,7 +57,7 @@ const ProjectItem = ({
             onClick={() => soundEnabled && playSound(blipClickSound)}
             onMouseEnter={() => soundEnabled && playSound(blipHoverSound)}
           >
-            <p className="text-center p-0.5 lg:p-2 rounded-xl mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 duration-300 hover:bg-med_gray lg:hover:py-2">
+            <p className="text-center p-0.5 lg:p-2 rounded-xl mt-1 bg-gradient-to-b to-dark_gray from-med_gray text-alien_green text-md hover:scale-105 duration-300 hover:bg-med_gray lg:hover:py-2">
               BE Repo
             </p>
           </a>
@@ -70,7 +70,7 @@ const ProjectItem = ({
             onClick={() => soundEnabled && playSound(blipClickSound)}
             onMouseEnter={() => soundEnabled && playSound(blipHoverSound)}
           >
-            <p className="text-center p-0.5 lg:p-2 rounded-xl mt-1 bg-dark_gray text-alien_green text-md hover:scale-105 duration-300 hover:bg-med_gray lg:hover:py-2">
+            <p className="text-center p-0.5 lg:p-2 rounded-xl mt-1 bg-gradient-to-b to-dark_gray from-med_gray text-alien_green text-md hover:scale-105 duration-300 hover:bg-med_gray lg:hover:py-2">
               FE Repo
             </p>
           </a>
