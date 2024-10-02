@@ -3,6 +3,7 @@ import { AiOutlineClose, AiOutlineHome, AiOutlineProject, AiOutlineMail } from '
 import { MdMenuOpen } from "react-icons/md";
 import { BsPerson } from 'react-icons/bs'
 import { GrProjects } from 'react-icons/gr'
+import { MdOutlineWorkOutline } from "react-icons/md";
 
 const SideNav = ({ soundEnabled, playSound, bladeOpenSound, bladeSwitch1, bladeSwitch2, bladeSwitch3, navHoverSound }) => {
   const [nav, setNav] = useState(false);
@@ -42,11 +43,11 @@ const SideNav = ({ soundEnabled, playSound, bladeOpenSound, bladeSwitch1, bladeS
               <span className='pl-4'>Home</span>
             </a>
             <a onClick={handleNav} href='#work' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gradient-to-b to-dark_gray from-med_gray text-alien_green shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'>
-              <GrProjects size={20} />
+              <MdOutlineWorkOutline size={20} />
               <span className='pl-4'>Work</span>
             </a>
             <a onClick={handleNav} href='#projects' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gradient-to-b to-dark_gray from-med_gray text-alien_green shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'>
-              <AiOutlineProject size={20} />
+              <GrProjects size={20} />
               <span className='pl-4'>Projects</span>
             </a>
             <a onClick={handleNav} href='#about-me' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gradient-to-b to-dark_gray from-med_gray text-alien_green shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'>
@@ -79,7 +80,7 @@ const SideNav = ({ soundEnabled, playSound, bladeOpenSound, bladeSwitch1, bladeS
               onMouseEnter={() => soundEnabled && playSound(navHoverSound)}
             >
               <div className='inline-flex justify-center items-center '>
-                <GrProjects className='text-alien_green z-20' size={25} />
+                <MdOutlineWorkOutline className='text-alien_green z-20' size={25} />
                 <span className='absolute left-7 w-0 overflow-hidden bg-gradient-to-b to-dark_gray from-med_gray rounded-r-full transition-all ease-in duration-200 group-hover:w-32 h-full flex items-center justify-center text-alien_green font-mussels text-opacity-0 group-hover:text-opacity-100'>Work</span>
               </div>
             </a>
@@ -90,7 +91,7 @@ const SideNav = ({ soundEnabled, playSound, bladeOpenSound, bladeSwitch1, bladeS
               onMouseEnter={() => soundEnabled && playSound(navHoverSound)}
             >
               <div className='inline-flex justify-center items-center '>
-                <AiOutlineProject className='text-alien_green z-20' size={25} />
+                <GrProjects className='text-alien_green z-20' size={25} />
                 <span className='absolute left-7 w-0 overflow-hidden bg-gradient-to-b to-dark_gray from-med_gray rounded-r-full transition-all ease-in duration-200 group-hover:w-32 h-full flex items-center justify-center text-alien_green font-mussels text-opacity-0 group-hover:text-opacity-100'>Projects</span>
               </div>
             </a>
