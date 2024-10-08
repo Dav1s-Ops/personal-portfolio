@@ -37,7 +37,7 @@ const WorkItem = ({
     >
       <h3 className="text-xl font-bold text-white">{title}</h3>
       <a
-        className="mt-4 cursor-pointer text-alien_green hover:scale-105 ease-in duration-200 hover:bg-dark_gray hover:text-light_gray hover:rounded-md"
+        className="mt-4 cursor-pointer text-alien_green hover:scale-105 ease-in duration-200 hover:text-underlined"
         href={website}
         target="_blank"
         rel="noopener noreferrer"
