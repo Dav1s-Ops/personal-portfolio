@@ -28,7 +28,7 @@ const Work = () => {
         <div className='flex flex-col items-center justify-evenly p-4 text-white bg-gradient-to-b to-dark_gray from-med_gray rounded-l-3xl rounded outline outline-alien_green outline-4 shadow-lg shadow-gray-400'>
           <div className='flex items-center justify-start gap-2'>
             <h4 className='font-mussels'>Languages</h4>
-            <img src="https://skillicons.dev/icons?i=ruby,js,cpp" alt="My languages"/>
+            <img src="https://skillicons.dev/icons?i=ruby,js,cs" alt="My languages"/>
           </div>
         </div>
         <div className='flex flex-col items-center justify-evenly p-4 text-white bg-gradient-to-b to-dark_gray from-med_gray rounded-tl-3xl rounded-br-3xl lg:rounded outline outline-alien_green outline-4 shadow-lg shadow-gray-400'>
