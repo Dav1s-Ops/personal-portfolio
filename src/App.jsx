@@ -141,12 +141,6 @@ function App() {
         blipClickSound={blipClickSound.current}
       />
       <AboutMe />
-      <Contact 
-        soundEnabled={soundEnabled} 
-        playSound={playSound} 
-        blipHoverSound={blipHoverSound.current} 
-        blipClickSound={blipClickSound.current}
-      />
     </main>
   );
 }
