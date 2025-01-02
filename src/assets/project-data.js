@@ -1,8 +1,7 @@
-import RefugeeAidImg from '../assets/RefugeeAid.png';
 import AccoladerImg from '../assets/accolader.png'
 import WWVTImg from '../assets/wwvt.png';
 import WhetherSweater from '../assets/whether-sweater.png';
-import GenreFi from '../assets/genre-fi.png';
+import PersonalBlog from '../assets/PersonalBlog.png'
 
 const projectList = [
   {
@@ -14,11 +13,11 @@ const projectList = [
     link: 'https://whether-sweater-fe.vercel.app/',
   },
   {
-    img: GenreFi,
-    title: 'Genre-Fi',
-    framework: 'React',
-    link: 'https://genre-fi.vercel.app/',
-    felink: 'https://github.com/Dav1s-Ops/genre-fi',
+    img: PersonalBlog,
+    title: 'Personal Blog',
+    framework: 'Ruby on Rails',
+    link: 'https://dw-blog-v3.fly.dev/',
+    belink: 'https://github.com/Dav1s-Ops/dw-blog-v3',
   },
   {
     img: AccoladerImg,
@@ -29,8 +28,7 @@ const projectList = [
   {
     img: WWVTImg,
     title: "World's Wonder View Tower",
-    framework: 'SquareSpace',
-    link: 'https://www.friendsofthegenoatower.org/',
+    link: 'https://www.friendsofthegenoatower.org/'
   },
 ];
 
