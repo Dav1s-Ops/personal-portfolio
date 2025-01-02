@@ -1,10 +1,20 @@
 export const data = [
   {
+    year: 2025,
+    title: 'Software Engineer',
+    company: 'Calance',
+    website: 'https://www.calanceus.com/',
+    duration: 'Current',
+    inSchool: false,
+    details: 'Developing RPA tools using C# & .NET to streamline repetitive tasks and improve operational efficiency. Continuing to build out AWS services to ensure scalability and reliability.',
+    list: 'https://skillicons.dev/icons?i=cs,dotnet,linux,aws,js,html,css'
+  },
+  {
     year: 2024,
     title: 'Software Engineer',
     company: 'ThxRex',
     website: 'https://thxrex.com/',
-    duration: 'Current',
+    duration: '7 months',
     inSchool: false,
     details: 'I am currently working on the development and testing of the ThxRex B2B2C food web application. More to come soon!',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,tailwind,heroku,docker,git'
