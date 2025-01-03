@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineHome, AiOutlineProject, AiOutlineRead } from 'react-icons/ai'
+import { RiExternalLinkLine } from "react-icons/ri";
 import { MdMenuOpen } from "react-icons/md";
 import { BsPerson } from 'react-icons/bs'
 import { GrProjects } from 'react-icons/gr'
@@ -107,18 +108,21 @@ const SideNav = ({ soundEnabled, playSound, bladeOpenSound, bladeSwitch1, bladeS
               </div>
             </a>
             <a 
-                href='https://dw-blog-v3.fly.dev/'
-                target='_blank'
-                rel='noopener noreferrer' 
-                className='group relative flex items-center justify-center rounded-full shadow bg-gradient-to-b to-dark_gray from-med_gray hover:scale-110 m-5 p-4 cursor-pointer transition-all ease-in duration-200 w-14 h-14'
-                onClick={() => soundEnabled && playSound(bladeOpenSound)}
-                onMouseEnter={() => soundEnabled && playSound(navHoverSound)}
-              >
-                <div className='inline-flex justify-center items-center'>
-                  <AiOutlineRead className='text-alien_green z-20' size={25} />
-                  <span className='absolute left-7 w-0 overflow-hidden bg-gradient-to-b to-dark_gray from-med_gray rounded-r-full transition-all ease-in duration-200 group-hover:w-32 h-full flex items-center justify-center text-alien_green font-mussels text-opacity-0 group-hover:text-opacity-100'>Blog</span>
-                </div>
-              </a>
+              href='https://dw-blog-v3.fly.dev/' 
+              className='group relative flex items-center justify-center rounded-full shadow bg-gradient-to-b to-dark_gray from-med_gray hover:scale-110 m-5 p-4 cursor-pointer transition-all ease-in duration-200 w-14 h-14'
+              onClick={() => soundEnabled && playSound(bladeOpenSound)}
+              onMouseEnter={() => soundEnabled && playSound(navHoverSound)}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <div className='inline-flex justify-center items-center'>
+                <AiOutlineRead className='text-alien_green z-20' size={25} />
+                <span className='absolute left-7 w-0 overflow-hidden bg-gradient-to-b to-dark_gray from-med_gray rounded-r-full transition-all ease-in duration-200 group-hover:w-40 h-full flex items-center justify-center text-alien_green font-mussels text-opacity-0 group-hover:text-opacity-100'>
+                  Blog
+                  <RiExternalLinkLine className='ml-2 text-alien_green z-20' size={18} />
+                </span>
+              </div>
+            </a>
             </div>
           </div>
         )

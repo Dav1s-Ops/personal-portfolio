@@ -6,7 +6,7 @@ export const data = [
     website: 'https://www.calanceus.com/',
     duration: 'Current',
     inSchool: false,
-    details: 'Developing RPA tools using C# & .NET to streamline repetitive tasks and improve operational efficiency. Continuing to build out AWS services to ensure scalability and reliability.',
+    details: 'Developing RPA tools using C# & .NET. Continuing to build out AWS services.',
     list: 'https://skillicons.dev/icons?i=cs,dotnet,linux,aws,js,html,css'
   },
   {
