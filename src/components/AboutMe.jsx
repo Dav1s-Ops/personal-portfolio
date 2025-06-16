@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import MeImg from '../assets/fiverr-pic.jpg';
-import Book from '../assets/mistborn.webp';
+import Book from '../assets/three-body-problem.png';
 import use3DCardEffect from '../hooks/use3DCardEffect';
 
 const AboutMe = () => {
