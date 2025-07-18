@@ -55,7 +55,7 @@ const SideNav = ({ soundEnabled, playSound, bladeOpenSound, bladeSwitch1, bladeS
               <BsPerson size={20} />
               <span className='pl-4'>About Me</span>
             </a>
-            <a onClick={handleNav} href='https://dw-blog-v3.fly.dev/' target='_blank' rel='noopener noreferrer'  className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gradient-to-b to-dark_gray from-med_gray text-alien_green shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'>
+            <a onClick={handleNav} href='https://dw-code-blog.dev/' target='_blank' rel='noopener noreferrer'  className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gradient-to-b to-dark_gray from-med_gray text-alien_green shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'>
               <AiOutlineRead size={20} />
               <span className='pl-4'>Blog</span>
             </a>
@@ -108,7 +108,7 @@ const SideNav = ({ soundEnabled, playSound, bladeOpenSound, bladeSwitch1, bladeS
               </div>
             </a>
             <a 
-              href='https://dw-blog-v3.fly.dev/' 
+              href='https://dw-code-blog.dev/' 
               className='group relative flex items-center justify-center rounded-full shadow bg-gradient-to-b to-dark_gray from-med_gray hover:scale-110 m-5 p-4 cursor-pointer transition-all ease-in duration-200 w-14 h-14'
               onClick={() => soundEnabled && playSound(bladeOpenSound)}
               onMouseEnter={() => soundEnabled && playSound(navHoverSound)}
