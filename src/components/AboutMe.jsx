@@ -31,18 +31,23 @@ const AboutMe = () => {
           alt='Me'
         />
         <p className='w-3/4'>
-          My name is Davis and I'm a Software Engineer with a background in Audio Engineering. When I
-          am not programming I love listening to, collecting and making music. Check out my{' '}
+          I'm not just into Software, I'm also an Audio Engineer! I love listening to,{' '}
           <a
             className='hover:underline hover:text-alien_green'
-            href='https://soundcloud.com/berrik'
+            href='href="https://www.discogs.com/user/BerrikDub"'
             target='_blank'
             rel='noopener noreferrer'
           >
-            SoundCloud
-          </a>{' '}
-          to see what I've been working on. I also enjoy reading (especially sci-fi space operas),
-          playing video games,{' '}
+            collecting
+          </a>,{' '}and{' '}
+          <a
+            className='hover:underline hover:text-alien_green'
+            href='href="https://soundcloud.com/berrik"'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            making
+          </a>{' '}music. I also enjoy reading (Sci-Fi & Fantasy), video games,{' '}
           <a
             className='hover:underline hover:text-alien_green'
             href='https://www.mixcloud.com/da-5k/'
@@ -50,8 +55,8 @@ const AboutMe = () => {
             rel='noopener noreferrer'
           >
             DJing
-          </a>
-          , and spending time with my partner Mary and our cat.
+          </a>{' '}
+          , and spending time with my partner Mary and our dog.
         </p>
       </div>
       <div className='flex lg:flex-row flex-col gap-2 items-center justify-between'>
