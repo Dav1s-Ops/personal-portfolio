@@ -6,7 +6,7 @@ export const data = [
     website: 'https://www.calanceus.com/',
     duration: 'Current',
     inSchool: false,
-    details: 'Developing RPA tools using C# & .NET. Continuing to build out AWS services.',
+    details: 'Developing RPA tools using C#/.NET Playwright & Selenium as well as continuing to build out AWS services.',
     list: 'https://skillicons.dev/icons?i=cs,dotnet,linux,aws,js,html,css'
   },
   {
@@ -16,7 +16,7 @@ export const data = [
     website: 'https://thxrex.com/',
     duration: '7 months',
     inSchool: false,
-    details: 'I am currently working on the development and testing of the ThxRex B2B2C food web application. More to come soon!',
+    details: 'Worked on the development and testing of the ThxRex B2B2C food web application. More to come soon!',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,tailwind,heroku,docker,git'
   },
   {
