@@ -80,7 +80,7 @@ const Main = ({ soundEnabled, playSound, hoverSound, clickSound }) => {
             </a>
             <a
               className='hover:translate-y-1 m-1 md:m-3 py-1 px-1 rounded-lg ease-in duration-200 bg-[#161616]/80 backdrop-blur-md hover:bg-gradient-to-b hover:to-light_gray hover:from-light_gray'
-              href="https://soundcloud.com/berrik"
+              href="https://soundcloud.com/berrik/popular-tracks"
               target="_blank"
               rel="noopener noreferrer"
               onMouseEnter={() => soundEnabled && playSound(hoverSound)}
