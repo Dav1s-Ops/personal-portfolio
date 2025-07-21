@@ -34,7 +34,7 @@ const AboutMe = () => {
           I'm not just into Software, I'm also an Audio Engineer! I love listening to,{' '}
           <a
             className='hover:underline hover:text-alien_green'
-            href='href="https://www.discogs.com/user/BerrikDub"'
+            href='https://www.discogs.com/user/BerrikDub'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -42,7 +42,7 @@ const AboutMe = () => {
           </a>,{' '}and{' '}
           <a
             className='hover:underline hover:text-alien_green'
-            href='href="https://soundcloud.com/berrik"'
+            href='https://soundcloud.com/berrik/popular-tracks'
             target='_blank'
             rel='noopener noreferrer'
           >
