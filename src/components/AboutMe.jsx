@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import MeImg from '../assets/fiverr-pic.jpg';
+import MeImg from '../assets/me-n-dog.png';
 import Book from '../assets/three-body-problem.png';
 import use3DCardEffect from '../hooks/use3DCardEffect';
 
@@ -26,7 +26,7 @@ const AboutMe = () => {
       </h1>
       <div className='font-mussels text-center mb-4 flex flex-col lg:flex-row items-center justify-between gap-4'>
         <img
-          className='w-36 h-36 object-cover rounded-full shadow-md shadow-gray-400'
+          className='w-36 h-36 object-cover rounded-xl shadow-md shadow-gray-400'
           src={MeImg}
           alt='Me'
         />
