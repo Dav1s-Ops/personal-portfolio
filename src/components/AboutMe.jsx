@@ -26,7 +26,7 @@ const AboutMe = () => {
       </h1>
       <div className='font-mussels text-center mb-4 flex flex-col lg:flex-row items-center justify-between gap-4'>
         <img
-          className='w-36 h-36 object-cover rounded-xl shadow-md shadow-gray-400'
+          className='w-36 h-36 object-cover border-alien_green border-4 rounded-full object-top shadow-md shadow-gray-400'
           src={MeImg}
           alt='Me'
         />
@@ -62,7 +62,7 @@ const AboutMe = () => {
       <div className='flex lg:flex-row flex-col gap-2 items-center justify-between'>
         <div
           ref={cardRefSpotify}
-          className='bg-dark_gray rounded-lg p-4 shadow-xl shadow-gray-400'
+          className='bg-dark_gray rounded-lg p-4 shadow-xl shadow-gray-400 hover:outline hover:outline-2 hover:outline-offset-1 hover:outline-alien_green'
           style={{ width: '320px', height: '445px' }}
         >
           <a
@@ -79,7 +79,7 @@ const AboutMe = () => {
         </div>
         <div
           ref={cardRefNowReading}
-          className='bg-dark_gray rounded-lg p-4 shadow-xl shadow-gray-400'
+          className='bg-dark_gray rounded-lg p-4 shadow-xl shadow-gray-400 hover:outline hover:outline-2 hover:outline-offset-1 hover:outline-alien_green'
           style={{ width: '320px', height: '445px' }}
         >
           <h2 className='text-xl font-mussels-bold text-center text-white mb-2'>Currently Reading</h2>
