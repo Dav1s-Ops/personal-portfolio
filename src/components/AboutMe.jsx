@@ -26,7 +26,7 @@ const AboutMe = () => {
       </h1>
       <div className='font-mussels text-center mb-4 flex flex-col lg:flex-row items-center justify-between gap-4'>
         <img
-          className='w-36 h-36 object-cover border-alien_green border-4 rounded-full object-top shadow-md shadow-gray-400'
+          className='w-48 h-48 object-cover object-top border-alien_green border-4 rounded-full shadow-md shadow-gray-400'
           src={MeImg}
           alt='Me'
         />
