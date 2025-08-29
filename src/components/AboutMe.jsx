@@ -24,13 +24,13 @@ const AboutMe = () => {
       <h1 className='py-4 text-4xl font-mussels-bold text-center text-dark_gray'>
         About Me
       </h1>
-      <div className='font-mussels text-center mb-4 flex flex-col lg:flex-row items-center justify-between gap-4'>
+      <div className='font-mussels text-center mb-4 flex flex-col lg:flex-row items-center justify-center gap-4'>
         <img
           className='w-48 h-48 object-cover object-top border-alien_green border-4 rounded-full shadow-md shadow-gray-400'
           src={MeImg}
           alt='Me'
         />
-        <p className='w-3/4'>
+        <p className='w-3/5'>
           I'm not just into Software, I'm also an Audio Engineer! I love listening to,{' '}
           <a
             className='hover:underline hover:text-alien_green'
