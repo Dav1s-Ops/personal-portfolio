@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import MeImg from '../assets/me-n-dog.png';
-import Book from '../assets/three-body-problem.png';
+import Book from '../assets/The-Hobbit-Book-Cover-with-Smaug.webp';
 import use3DCardEffect from '../hooks/use3DCardEffect';
 
 const AboutMe = () => {
@@ -56,7 +56,7 @@ const AboutMe = () => {
           >
             DJing
           </a>{' '}
-          , and spending time with my partner Mary and our dog.
+          , and spending time with my partner Mary and our dog Piglet!
         </p>
       </div>
       <div className='flex lg:flex-row flex-col gap-2 items-center justify-between'>

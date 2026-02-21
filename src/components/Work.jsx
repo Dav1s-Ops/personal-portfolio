@@ -37,13 +37,13 @@ const Work = () => {
               <span className='hidden sm:inline'>Technologies</span>
               <span className='sm:hidden'>Tech</span>
             </h4>
-            <img src="https://skillicons.dev/icons?i=rails,react,postgres,graphql,nodejs,bootstrap,vite,tailwind,docker,aws&perline=5" alt="My frameworks"/>
+            <img src="https://skillicons.dev/icons?i=rails,react,postgres,mongo,mysql,dotnet,gcp,azure,docker,aws&perline=5" alt="My frameworks"/>
           </div>
         </div>
         <div className='flex flex-col items-center justify-evenly p-4 text-white bg-gradient-to-b to-dark_gray from-med_gray rounded-r-3xl rounded outline outline-alien_green outline-4 shadow-lg shadow-gray-400'>
           <div className='flex items-center justify-start gap-2'>
             <h4 className='font-mussels'>Dev Tools</h4>
-            <img src="https://skillicons.dev/icons?i=vscode,postman,git" alt="My development tools"/>
+            <img src="https://skillicons.dev/icons?i=vscode,visualstudio,git" alt="My development tools"/>
           </div>
         </div>
       </div>

@@ -37,7 +37,7 @@ const WorkItem = ({
     >
       <h3 className="text-xl font-bold text-white">{title}</h3>
       <a
-        className="mt-4 cursor-pointer text-alien_green hover:scale-105 ease-in duration-200 hover:text-underlined"
+        className="mt-2 cursor-pointer text-alien_green hover:scale-105 ease-in duration-200 hover:text-underlined"
         href={website}
         target="_blank"
         rel="noopener noreferrer"
@@ -51,7 +51,7 @@ const WorkItem = ({
       <p className="text-stone-300">{details}</p>
       {list && (
         <div className="flex justify-start items-center">
-          <img className="mt-4 w-40" src={list} alt="languages/tech" />
+          <img className="mt-2 w-40" src={list} alt="languages/tech" />
         </div>
       )}
     </VerticalTimelineElement>
