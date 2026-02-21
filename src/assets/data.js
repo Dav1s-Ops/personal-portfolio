@@ -1,12 +1,22 @@
 export const data = [
   {
+    year: 2026,
+    title: 'Full Stack Software Engineer',
+    company: 'Sonepar US',
+    website: 'https://www.soneparusa.com/us-en/',
+    duration: 'Current',
+    inSchool: false,
+    details: 'Contributing to the Digital Factory omnichannel platform.',
+    list: 'https://skillicons.dev/icons?i=cs,dotnet,mongo,gcp,azure,kubernetes'
+  },
+  {
     year: 2025,
     title: 'Software Engineer',
     company: 'Calance',
     website: 'https://www.calanceus.com/',
-    duration: 'Current',
+    duration: '1 year',
     inSchool: false,
-    details: 'Developing RPA tools using C#/.NET Playwright & Selenium as well as continuing to build out AWS services.',
+    details: 'Developed RPA tools using .NET Playwright & Selenium.',
     list: 'https://skillicons.dev/icons?i=cs,dotnet,linux,aws,js,html,css'
   },
   {
@@ -16,7 +26,7 @@ export const data = [
     website: 'https://thxrex.com/',
     duration: '7 months',
     inSchool: false,
-    details: 'Worked on the development and testing of the ThxRex B2B2C food web application. More to come soon!',
+    details: 'Developed and tested the ThxRex B2B2C food web application.',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,tailwind,heroku,docker,git'
   },
   {
@@ -26,7 +36,7 @@ export const data = [
     website: 'https://tackmobile.com/',
     duration: '4 months',
     inSchool: false,
-    details: 'Worked on the Accolader web-based employee recognition system. I implemented a new planned feature for Users to add Birthdays. In addition, I worked on containerizing the app with Docker to migrate from AWS EB and use AWS ECR to deploy on an EC2 instance.',
+    details: 'Worked on Accolader, a web-based employee recognition system.',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,redis,aws,docker,git'
   },
   {
@@ -36,7 +46,7 @@ export const data = [
     website: 'https://turing.edu/',
     duration: '9 months',
     inSchool: true,
-    details: 'Began my journey into Software Engineering after completing the Backend Engineering program at Turing School of Software & Design.',
+    details: 'Began my journey into Software Engineering after completing the Backend Engineering program.',
     list: 'https://skillicons.dev/icons?i=ruby,rails,js,react,graphql,git'
   },
   {
@@ -46,7 +56,7 @@ export const data = [
     website: 'https://brownnote.com/integration/services/',
     duration: '1 year',
     inSchool: false,
-    details: 'I returned to Brown Note Productions and joined the Integration Department, where I focused on networking, AVL shipping and receiving, and AVL rack building and design.'
+    details: 'I rejoined Brown Note Productions in the Integration Department, focusing on networking, AVL shipping/receiving, and rack building/design.'
   },
   {
     year: 2021,
@@ -55,7 +65,7 @@ export const data = [
     website: 'https://www.evergroove.com/',
     duration: '2 years',
     inSchool: false,
-    details: "I assisted with upgrading the studio to an Audio over IP Dante Atmos system, ensured high-quality Pro Tools recording sessions. For sessions, I connected with artists for feedback and worked with Dolby Atmos (7.1.4)."
+    details: "Upgraded studio to Dante Atmos AoIP, ran Pro Tools sessions in 7.1.4"
   },
   {
     year: 2020,
@@ -64,7 +74,7 @@ export const data = [
     title: 'FOH Engineer',
     duration: '2 years',
     inSchool: false,
-    details: "During the pandemic, I collaborated with Itchy-O to organize and run audio for 'Drive-in' Sypherlot performances in Denver, where I assited with the recording, mixing, and mastering of the shows. I also helped manage RF coordination/deployment for over 20 channels, and handled soundchecks and monitor mixes for musicians amidst wildly unpredictable (but exteremetly exciting) performances." 
+    details: "Recorded/mixed/mastered the Pandemic drive-in Sypherlot shows, managed 20+ RF channels, ran soundchecks & monitor mixes for maximum, high-energy chaos!" 
   },
   {
     year: 2018,
@@ -73,7 +83,7 @@ export const data = [
     title: 'A2 - Audio Technician',
     duration: '2 years',
     inSchool: false,
-    details: "I specialized in audio for local and national festivals, including the X Games, Global Dance, and Chicago Open Air, where I repaired and tested speakers, built tailored audio packages, flew line-array systems, and helped time align the systems before shows."
+    details: "Specialized in festival audio (X Games, Global Dance, Chicago Open Air): repaired/tested speakers, built custom packages, flew line arrays, and time-aligned systems."
   },
   {
     year: 2016,
